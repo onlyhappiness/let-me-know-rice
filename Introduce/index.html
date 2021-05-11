@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="js/scroll_reveal.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/ui_search.js" defer></script>
+  <script src="js/ui_result.js" defer></script>
+  <script src="js/ui_detail.js" defer></script>
+  <script src="js/auto_slider.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <a href="#banner" class="logo">
+      <img src="images/Rice.png">
+    </a>
+
+    <ul class="navigation">
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#flowchart">Flow Chart</a></li>
+    </ul> 
+  </header>
+
+  <section class="banner" id="banner">
+    <div class="content">
+      <h2>
+        <span>밥</span>
+        <span>먹을 곳을 알려</span>
+        <span>줘</span>
+      </h2>
+      <h3>Let me Know Rice</h3>
+      <p>
+        This project is still in production and is an alias. And I lack a lot of development skills. Please enjoy it and give us a lot of feedback.
+      </p>
+      <a href="#background" class="btn">View</a>
+    </div>
+  </section>
+
+  <section class="background" id="background">
+    <div class="content">
+      <h2 class="titleText"><span>B</span>ackground</h2>
+      
+      <div class="container">
+        <div class="circle c1">
+          <i class="fas fa-walking"></i>
+          <p>
+            Easy To Access
+          </p>
+        </div>
+  
+        <div class="circle c2">
+          <i class="fas fa-search-location"></i>
+          <p>
+            Display your own location <br> and store location
+          </p>
+        </div>
+  
+        <div class="circle c1">
+          <i class="fas fa-won-sign"></i>
+          <p>
+            Can see how much <br> the price is
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flowchart" id="flowchart">
+    <div class="content">
+      <h2 class="titleText"><span>F</span>lowchart</h2>
+    </div>
+
+    <div class="container">
+      <div class="ui">
+        <div class="login">
+          <div class="toggle1"></div>
+          <div class="ui_container">
+            <div class="logo_circle">
+              <img src="images/Rice.png">
+            </div>
+            <input type="text" placeholder="ID">
+            <input type="text" placeholder="Password">
+          </div>
+        </div>
+        <p>UI-Login</p>
+      </div>
+    
+      <!-- search -->
+      <div class="ui">
+        <div class="search">
+          <div class="toggle2"></div>
+          <div class="ui_container">
+            <div class="search_bar">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="search_result">
+              <ul>
+                <li>검색을 하면</li>
+                <li>여기에</li>
+                <li>목록이</li>
+                <li>나옵니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>UI-Search</p>
+      </div>
+    
+    
+      <div class="ui">
+        <div class="detail">
+          <div class="toggle3"></div>
+          <div class="ui_container">
+            <div class="search_bar">
+              <input type="text">
+              <i class="fas fa-search" class="result_search"></i>
+            </div>
+            <div class="map"></div>
+          </div>
+          <div class="result">
+            <button class="result_btn">Clcik This!</button>
+            <img src="images/map2.png" class="result_img">
+          </div>
+        </div>
+        <p>UI-Result</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="function" id="function">
+    <div class="container">
+      <div class="text">
+        <h2 class="titleText"><span>F</span>unction</h2>
+      <p>
+        1. Android Studio 
+      </p>
+      <p>
+        2. Java / Kotlin
+      </p>
+      <p>
+        3. API
+      </p>
+      </div>
+      
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/4.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
