@@ -1,0 +1,187 @@
+/* CSS는 순서를 정해서 작성하도록 하자 */
+/* 
+1. position(자리)
+2. display(layout 등)
+3. width(너비나 높이)
+4. margin, padding(여백)
+5. background(배경, 폰트, 색상 등)
+6. border(테두리)
+7. size(크기)
+8. decoration(데코) 
+*/
+:root {
+  /* Color */
+  --main-color: #00db3f;
+  --form-color: #191919;
+  --modal-content-color: #fefefe;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 60px;
+  z-index: 15;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.nav li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sign_up {
+  border: 0.8px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.log_in {
+  background: var(--main-color);
+}
+
+/* Container */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 100vh;
+  background: url("images/Home5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.form_item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_label {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 800;
+}
+
+input[type="email"] {
+  background: none;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  border: 2px solid var(--main-color);
+  padding: 14px 20px;
+  width: 400px;
+  outline: none;
+  color: #fff;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+#btn_request {
+  display: block;
+  padding: 10px 20px;
+  background: none;
+  color: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+.popup_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_container.active {
+  display: flex;
+}
+
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  position: relative;
+  width: 500px;
+}
+
+.popup button {
+  background-color: #fff;
+  color: var(--main-color);
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
