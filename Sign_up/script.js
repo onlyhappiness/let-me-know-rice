@@ -1,11 +1,12 @@
-const open_modal = document.getElementById('btn_request');
-const close_modal = document.getElementById('close');
-const modal_container = document.getElementById('modal_container');
+/* Dark Light Theme */
+const themeButton = document.getElementById('theme_button');
+const darktheme = 'dark_theme';
+const bg = document.querySelector('.bg');
+const logo = document.querySelector('.logo');
 
-open_modal.addEventListener('click', () => {
-  modal_container.classList.add('active');
-});
-
-close_modal.addEventListener('click', () => {
-  modal_container.classList.remove('active');
-});
+themeButton.addEventListener('click' ,() => {
+  document.body.classList.toggle(darktheme);
+  logo.classList.toggle(darktheme);
+  bg.classList.toggle(darktheme);
+  // themeButton.classList.toggle(iconTheme);
+})
