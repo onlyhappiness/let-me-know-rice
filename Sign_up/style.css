@@ -11,9 +11,20 @@
 */
 :root {
   /* Color */
-  --main-color: #00db3f;
-  --form-color: #191919;
+  --main-color: #34bf8c;
+  --input-color: #3498db;
+  --form-color: #d6f4d2;
+  --background-color: #e7ecee;
   --modal-content-color: #fefefe;
+  /* #2ecc71; */
+
+  --main-red-color: #f25c5c;
+  --main-yellow-color: #f2b33d;
+  --main-green-color: #34bf8c;
+  --main-purple-color: #8243d9;
+  --main-sky-color: #7cb9f8;
+
+  --text-color: #111;
 }
 
 * {
@@ -22,22 +33,32 @@
   box-sizing: border-box;
 }
 
+body.dark_theme {
+  --form-color: #111;
+  --text-color: #ffffff;
+}
+
 /* Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 100%;
   padding: 20px 60px;
-  z-index: 15;
+  z-index: 1;
 }
 
-.logo img {
+.logo {
   width: 50px;
   height: 50px;
+}
+
+.logo.dark_theme {
   filter: invert(1);
 }
 
@@ -54,13 +75,16 @@ header {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
-  color: #fff;
 }
 
 .btn {
   border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.introduce{
+  color: var(--main-color);
 }
 
 .sign_up {
@@ -70,6 +94,13 @@ header {
 
 .log_in {
   background: var(--main-color);
+  color: #fff;
+}
+
+.change_theme {
+  padding: 15px 10px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /* Container */
@@ -86,14 +117,18 @@ header {
   background-size: cover;
 }
 
-.bg {
+/* .bg{
+  display: none;
+} */
+
+.bg.dark_theme {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-}
+} 
 
 form {
   border-radius: 50px;
@@ -106,8 +141,13 @@ form {
   flex-direction: column;
   padding: 80px 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
+  background: var(--form-color);
   text-align: center;
+}
+
+.form_label_text {
+  color: var(--text-color);
 }
 
 .form_item {
@@ -116,6 +156,8 @@ form {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+
+  width: 500px;
 }
 
 .form_label {
@@ -123,35 +165,38 @@ form {
   justify-content: flex-start;
   width: 100%;
   font-size: 1em;
-  color: #fff;
   font-weight: 800;
 }
 
-input[type="email"] {
+.form_input {
   background: none;
   display: block;
   margin: 20px;
   text-align: center;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--input-color);
   padding: 14px 20px;
   width: 400px;
   outline: none;
-  color: #fff;
   border-radius: 24px;
   transition: 0.25s;
+}
+
+.form_input:focus {
+  width: 500px;
+  border-color: var(--main-color);
 }
 
 #btn_request {
   display: block;
   padding: 10px 20px;
   background: none;
-  color: #fff;
+  color: var(--text-color);
   border: 2px solid var(--main-color);
   border-radius: 20px;
   font-size: 1em;
 }
 
-.popup_container {
+/* .popup_container {
   position: fixed;
   top: 0;
   left: 0;
@@ -184,4 +229,4 @@ input[type="email"] {
   position: absolute;
   top: 10px;
   right: 10px;
-}
+} */
