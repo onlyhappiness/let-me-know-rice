@@ -11,9 +11,10 @@
 */
 :root {
   /* Color */
-  --main-color: #34bf8c;
-  --input-color: #3498db;
-  --form-color: #d6f4d2;
+  --main-color: #0442bf;
+  --input-color: #0468bf;
+  --input-hover-color: #f28585;
+  --form-color: #d7d7d9;
   --background-color: #e7ecee;
   --modal-content-color: #fefefe;
   /* #2ecc71; */
@@ -34,8 +35,11 @@
 }
 
 body.dark_theme {
-  --form-color: #111;
+  --form-color: #010711;
   --text-color: #ffffff;
+  --main-color: #084bd3;
+  --input-color: #0468bf;
+  --input-hover-color: #f2ceae;
 }
 
 /* Header */
@@ -83,7 +87,7 @@ header {
   letter-spacing: 1px;
 }
 
-.introduce{
+.introduce {
   color: var(--main-color);
 }
 
@@ -128,7 +132,7 @@ header {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-} 
+}
 
 form {
   border-radius: 50px;
@@ -183,7 +187,7 @@ form {
 
 .form_input:focus {
   width: 500px;
-  border-color: var(--main-color);
+  border-color: var(--input-hover-color);
 }
 
 #btn_request {
