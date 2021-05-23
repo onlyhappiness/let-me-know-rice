@@ -1,9 +1,10 @@
 :root {
   /* Color */
-  --background-color: #e7ecee;
-  --login-page-color: #d6f4d2;
-  --input-color: #3498db;
-  --main-color: #34bf8c;
+  --background-color: #fff;
+  --login-page-color: #d7d7d9;
+  --input-color: #0468bf;
+  --input-hover-color: #f28585;
+  --main-color: #0442bf;
   /* #2ecc71; */
 
   --main-red-color: #f25c5c;
@@ -29,10 +30,11 @@ body {
 }
 
 body.dark_theme {
-  --background-color: #34495e;
-  --login-page-color: #191919;
-  --input-color: #3498db;
-  --main-color: #34bf8c;
+  --background-color: #4d4d59;
+  --login-page-color: #0f1724;
+  --input-color: #0468bf;
+  --input-hover-color: #f2ceae;
+  --main-color: #4881f1;
 }
 
 /* Header */
@@ -155,7 +157,7 @@ header {
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: #fff;
+  color: #f28585;
   border-radius: 24px;
   transition: 0.25s;
 }
@@ -163,7 +165,7 @@ header {
 .login_page input[type="text"]:focus,
 .login_page input[type="password"]:focus {
   width: 280px;
-  border-color: var(--main-color);
+  border-color: var(--input-hover-color);
 }
 
 .login_page input[type="submit"] {
@@ -175,10 +177,11 @@ header {
   border: 2px solid var(--main-color);
   padding: 14px 40px;
   outline: none;
-  color: gray;
+  color: var(--input-hover-color);
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .login_page input[type="submit"]:hover {
