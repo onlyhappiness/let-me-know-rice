@@ -1,14 +1,22 @@
+const signUp = document.querySelector('.SignUp');
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
+const popup = document.getElementById('popup_container');
+
+
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs();
 });
+
+popup.addEventListener('click', () => {
+	goLogin();
+})
 
 function checkInputs() {
 	// trim to remove the whitespaces
@@ -45,8 +53,8 @@ function checkInputs() {
 		setSuccessFor(password2);
 	}
 
-	if(usernameValue || emailValue  ||  passwordValue || password2Value !== '') {
-		goLogin();
+	if(usernameValue && emailValue  &&  passwordValue && password2Value !== '') {
+		modal();
 	}
 }
 
@@ -66,6 +74,11 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
+function modal() {
+	signUp.classList.toggle('active');
+	popup.classList.add('active');
+}
+
 function goLogin() {
-	location.href="../Login/index.html";
+	location.href="../Login_Demo/index.html";
 }

@@ -1,0 +1,90 @@
+:root {
+  /* Color */
+  /* --main-color: #0442bf; */
+  --main-red-color: #f25c5c;
+  --main-yellow-color: #f2b33d;
+  --main-green-color: #34bf8c;
+  --main-purple-color: #8243d9;
+  --main-sky-color: #7cb9f8;
+}
+
+.popup_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_container.active {
+  display: flex;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+  padding: 2rem;
+  width: 500px;
+}
+
+.popup_imgBox {
+  background: url("../images/celebration.png");
+  background-position: center;
+  background-size: cover;
+
+  animation: rotate_image 0.4s linear infinite;
+  width: 200px;
+  height: 200px;
+}
+
+.popup_text {
+  margin: 15px;
+  font-size: 1.5rem;
+}
+
+.popup p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.popup h2 {
+  font-size: 2rem;
+  margin-top: 15px;
+  color: var(--main-green-color);
+}
+
+.popup .green {
+  margin: 10px;
+  color: var(--main-green-color);
+  font-size: 14px;
+}
+
+.confirm {
+  margin-top: 10px;
+  border: 1px solid var(--main-sky-color);
+  background-color: var(--main-sky-color);
+  color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(10deg);
+  }
+}
