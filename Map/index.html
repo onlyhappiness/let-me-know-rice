@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/active.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- JS -->
+  <script src="js/accordion.js" defer></script>
+  <script src="js/category_list.js" defer></script>
+  <script src="js/category.js" defer></script>
+  <script src="js/control.js" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="js/maptype.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/swiper.js" defers></script>
+</head>
+
+<body>
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Bar Button -->
+  <div id="btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <!-- 지도 타입 컨트롤 div -->
+    <button class="accordion" id="overlay">
+      Overlay
+    </button>
+
+    <!-- Overlay -->
+    <div class="panel">
+      <!-- MapType -->
+      <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+      <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+
+      <!-- Zoom -->
+      <div class="custom_zoomcontrol radius_border">
+        <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png"
+            alt="확대"></span>
+        <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png"
+            alt="축소"></span>
+      </div>
+    </div>
+
+    <!-- Button2 -->
+    <button class="accordion" id="search">
+      Search
+    </button>
+
+    <!-- Search -->
+    <div class="panel" id="search_result">
+      <div id="menu_wrap" class="bg_white">
+        <div class="option">
+          <div>
+            <form onsubmit="searchPlaces(); return false;">
+              키워드 : <input type="text" value="양재" id="keyword" size="15">
+              <button type="submit">검색하기</button>
+            </form>
+          </div>
+        </div>
+        <hr>
+        <ul id="placesList"></ul>
+        <div id="pagination"></div>
+      </div>
+    </div>
+
+    <!-- Maptype -->
+    <button class="accordion" id="maptype">
+      Maptype
+    </button>
+
+    <div class="panel">
+      <input type="checkbox" id="chkUseDistrict" onclick="setOverlayMapTypeId()" /> 지적편집도 정보 보기
+      <input type="checkbox" id="chkTerrain" onclick="setOverlayMapTypeId()" /> 지형정보 보기
+      <input type="checkbox" id="chkTraffic" onclick="setOverlayMapTypeId()" /> 교통정보 보기
+      <input type="checkbox" id="chkBicycle" onclick="setOverlayMapTypeId()" /> 자전거도로 정보 보기
+    </div>
+
+    <button class="accordion category_btn" id="category_btn">
+      Category
+    </button>
+
+    <ul id="category">
+      <li id="BK9" data-order="0">
+        <span class="category_bg bank"></span>
+        은행
+      </li>
+      <li id="MT1" data-order="1">
+        <span class="category_bg mart"></span>
+        마트
+      </li>
+      <li id="PM9" data-order="2">
+        <span class="category_bg pharmacy"></span>
+        약국
+      </li>
+      <li id="OL7" data-order="3">
+        <span class="category_bg oil"></span>
+        주유소
+      </li>
+      <li id="CE7" data-order="4">
+        <span class="category_bg cafe"></span>
+        카페
+      </li>
+      <li id="CS2" data-order="5">
+        <span class="category_bg store"></span>
+        편의점
+      </li>
+    </ul>
+  </nav>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=456d0549da75048f2cd08e6c2a4677f1&libraries=services">
+    </script>
+
+</body>
+
+</html>
