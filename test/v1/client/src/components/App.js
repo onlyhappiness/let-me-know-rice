@@ -1,18 +1,20 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import NavBar from './views/NavBar'
-import SignIn from './views/SignIn'
-import SignUp from './views/SignUp'
+import NavBar from './navbar/NavBar';
+import SignUp from './signUp/SignUp';
+import Login from './login/Login';
+import View from './views/View';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
         <Routes>
-          {/* <Route path="/signIn" element={<SignIn /> } /> */}
-          <Route path="/signIn" element={ <SignIn /> } />
-          <Route path="/signup" />
+          <Route path="/signUp" element={ <SignUp /> }/>
+          <Route path="/Login" element={ <Login /> } />
+          <Route path="/map" element={ <View /> }/>
+
         </Routes>
       
     </div>
