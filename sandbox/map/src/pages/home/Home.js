@@ -1,9 +1,10 @@
 import React from 'react'
+import Map from '../../components/Map'
 
 function Home() {
   return (
-    <div>
-      홈페이지 입니다.
+    <div className="Home">
+      <Map />
     </div>
   )
 }

@@ -23,3 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 key.js
+
+api.js
+
+README.md
+
+.env
