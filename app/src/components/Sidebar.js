@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -6,9 +6,14 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+import Modal from './Modal'
+
 import './css/sidebar.scss'
 
 function Sidebar() {
+
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="sidebar">
       <Accordion>
@@ -65,6 +70,15 @@ function Sidebar() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+
+      <button onClick={()=> {
+        setModal(!modal)
+      }}>모달</button>
+      {
+        modal === true
+        ? (<Modal/>)
+        : null
+      }
     </div>
   )
 }
