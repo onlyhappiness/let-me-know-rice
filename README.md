@@ -1,26 +1,17 @@
-# 밥줘(Let-Me-Know-Rice)
+## 템플릿 찾는 중..
 
-## Index
-1. [소개](#1-소개)
-2. [주요-기능](#2.-주요-기능)
+### 1. 첫번째 템플릿
+> 와.. 이거 뭐냐.. 완전 멋져... o((>ω< ))o
+https://www.creative-tim.com/product/vision-ui-dashboard-react
+> 우와.. 세상에... 심지어 무료야..
+
+### 2. 두번째 템플릿
+> 이것도 나쁘지 않네..
+https://www.creative-tim.com/product/soft-ui-dashboard-react
 
 ---
-## 1. 소개
-💶카카오 맵 API를 이용하여 주변 식당을 알려드립니다.💶
 
-## 2. 주요 기능
-#### 💻 회원가입
-![밥줘-회원가입](https://user-images.githubusercontent.com/79133968/138590873-9fbe5033-1cc1-44e8-807f-cbb5271ca47e.png)
-
-#### 💻 로그인
-![밥줘-로그인](https://user-images.githubusercontent.com/79133968/138590886-495654db-9391-4ad6-9c80-fede0ded52f5.png)
-
-#### 💻 메인 페이지
-![양재 기본값](https://user-images.githubusercontent.com/79133968/138590930-21556886-f0a6-4892-8f99-b1f148c91ef0.png)
-
-+ 🔍 검색 기능
-![search](https://user-images.githubusercontent.com/79133968/138590941-4117c124-2039-40ff-b255-b32c46a3475f.png)
-
-+  🎨 지도 타입 변경
-![maptype](https://user-images.githubusercontent.com/79133968/138590961-cc566327-37c9-4eed-9e84-f26542ea6d4c.png)
-
+## 오케 두번째 템플릿으로 결정!
+> 음식 관련된 템플릿이 청색으로 화려하면 괜히 좀 그럴듯..
+>> 엄격한 eslint는 과감히 삭제
+>> 별 것도 아닌 거에 에러 발생하니 보기 싫엉

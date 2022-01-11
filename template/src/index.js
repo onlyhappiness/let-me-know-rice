@@ -1,29 +1,31 @@
-import ReactDOM from 'react-dom';
+/**
+=========================================================
+* Soft UI Dashboard React - v3.0.0
+=========================================================
 
-// third party
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
+* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 
-// project imports
-import * as serviceWorker from 'serviceWorker';
-import App from 'App';
-import { store } from 'store';
+Coded by www.creative-tim.com
 
-// style + assets
-import 'assets/scss/style.scss';
+ =========================================================
 
-// ==============================|| REACT DOM RENDER  ||============================== //
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "App";
+
+// Soft UI Dashboard React Context Provider
+import { SoftUIControllerProvider } from "context";
 
 ReactDOM.render(
-    <Provider store={store}>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </Provider>,
-    document.getElementById('root')
+  <BrowserRouter>
+    <SoftUIControllerProvider>
+      <App />
+    </SoftUIControllerProvider>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

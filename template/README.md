@@ -1,125 +1,210 @@
-# Berry Free React Material Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Berry%20React%20-%20The%20most%20beautiful%20Material%20designed%20Admin%20Dashboard%20Template%20&url=https://berrydashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
+# [Soft UI Dashboard React](http://demos.creative-tim.com/soft-ui-dashboard-react/#/dashboard?ref=readme-sudr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/soft-ui-dashboard-react&text=Check%20Soft%20UI%20Dashboard%20react%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#softdesign%20#react%20https://www.creative-tim.com/product/soft-ui-dashboard-react)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/berry-free-react-admin-template/blob/main/LICENSE)
-[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/berry-free-react-admin-template)](https://github.com/codedthemes/berry-free-react-admin-template/)
+![version](https://img.shields.io/badge/version-3.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/soft-ui-dashboard-react.svg)](https://github.com/creativetimofficial/soft-ui-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/soft-ui-dashboard-react.svg)](https://github.com/creativetimofficial/soft-ui-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
 
+![Image](https://s3.amazonaws.com/creativetim_bucket/products/500/original/soft-ui-dashboard-material-ui.jpg?1632195046)
 
-Berry is a free react admin template build using the M-UI. It is meant to be the best User Experience with highly customizable feature-riched pages. It is a complete React Dashboard Template with easy and intuitive responsive design as on retina screens or laptops.
+Start your Development with an Innovative Admin Template for MUI and React. If you like the look & feel of the hottest design trend right now, Soft UI, you will fall in love with this dashboard! It features a huge number of components built to fit together and look amazing.
 
-:star: :star: :star: Do not forget to star (Top right of this page) it if you like the theme  :star: :star: :star:
+**Fully Coded Elements**
+Soft UI Dashboard React is built with over 70 frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining. All components can take variations in color, which you can easily modify using MUI styled api and sx prop. You will save a lot of time going from prototyping to full-functional code because all elements are implemented. This Premium MUI Dashboard is coming with prebuilt design blocks, so the development process is seamless, switching from our pages to the real website is very easy to be done.
 
-![IMG_8566.jpg](https://berrydashboard.io/imp-images/berry-github-free-repo-1.jpg)
+View [all components here](https://www.creative-tim.com/learning-lab/react/alerts/soft-ui-dashboard/).
 
+**Documentation built by Developers**
 
-[Pro version](https://berrydashboard.io) of Berry react template contains features like TypeScript, Apps, Authentication Methods (i.e. JWT, Auth0, Firebase), Advance Components, Form Plugins, Layouts, Widgets, and many more.
+Each element is well presented in very complex documentation.
 
-| [Berry Free](https://berry-free-react-admin-template-git-v20-codedthemes.vercel.app/)    | [Berry](https://material-ui.com/store/items/berry-react-material-admin/) |
-| ---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------|
-| **9** Demo pages                                                                         | **45+** demo pages                                                       |
-| -                                                                                        | ✓ Multi-language                                                         |
-| -                                                                                        | ✓ Dark/Light Mode 🌓                                                    |
-| -                                                                                        | ✓ TypeScript version                                                     |
-| -                                                                                        | ✓ Design files (Figma)                                                   |
-| -                                                                                        | ✓ 6+ color Options                                                       |
-| -                                                                                        | ✓ RTL                                                                    |
-| -                                                                                        | ✓ JWT, Firebase, Auth0 authentications                                   |
-| -                                                                                        | ✓ [More components](https://berrydashboard.io/dashboard/default)         |  
+You can read more about the [documentation here](https://www.creative-tim.com/learning-lab/react/overview/soft-ui-dashboard/).
 
+**Example Pages**
 
-## Why Berry?
+If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. Every page is spaced well, with attractive layouts and pleasing shapes. Soft UI Dashboard React has everything you need to quickly set up an amazing project.
 
-Berry brings everything you need for dashboard development. We have added the following high-end features in the initial release.
+View [example pages here](https://demos.creative-tim.com/soft-ui-dashboard-react/#/dashboard).
 
- * Modern aesthetics UI design
- * Material-UI components
- * Fully Responsive, all modern browser supported
- * Easy to use code structure
- * Flexible & High-Performance code
- * Easy Documentation Guide
+**HELPFUL LINKS**
 
-## Free Berry React version
+- View [Github Repository](https://github.com/creativetimofficial/soft-ui-dashboard-react)
+- Check [FAQ Page](https://www.creative-tim.com/faq)
 
-#### Preview
+#### Special thanks
 
- - [Demo](https://berry-free-react-admin-template-git-v20-codedthemes.vercel.app/)
+During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
 
-#### Download
+- [MUI](https://mui.com/) - The React UI library for faster and easier web development.
+- [React Countup](https://github.com/glennreyes/react-countup) - A lightweight React component that can be used to quickly create animations that display numerical data in a more interesting way.
+- [React ChartJS 2](http://reactchartjs.github.io/react-chartjs-2/#/) - Simple yet flexible React charting for designers & developers.
+- [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
+- [UUID](https://github.com/uuidjs/uuid) - JavaScript library for generating random id numbers.
 
- - [Download from Github](https://github.com/codedthemes/berry-free-react-admin-template)
- 
-## Berry Pro version
+Let us know your thoughts below. And good luck with development!
 
-Berry is available to purchase.
-#### Preview
+## Table of Contents
 
- - [Demo](https://berrydashboard.io)
+- [Versions](#versions)
+- [Demo](#demo)
+- [Quick Start](#quick-start)
+- [Documentation](#documentation)
+- [File Structure](#file-structure)
+- [Browser Support](#browser-support)
+- [Resources](#resources)
+- [Reporting Issues](#reporting-issues)
+- [Technical Support or Questions](#technical-support-or-questions)
+- [Licensing](#licensing)
+- [Useful Links](#useful-links)
 
-#### Purchase
+## Versions
 
- - [Purchase from Material UI Store](https://material-ui.com/store/items/berry-react-material-admin/)
+[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/soft-ui-dashboard-pro-react?ref=readme-sudr)
 
-## Table of contents
+| React |
+| ----- |
 
- * [Getting Started](#getting-started)
- * [Documentation](#documentation)
- * [Technology Stack](#technology-stack)
- * [Author](#author)
- * [Issues?](#issues)
- * [License](#license)
- * [More Products](#more-free-react-material-admin-templates)
- * [Follow us](#follow-us)
- 
-## Getting Started
+| [![Soft UI Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/500/thumb/soft-ui-dashboard-material-ui.jpg?1632195046)](http://demos.creative-tim.com/soft-ui-dashboard-pro-react/#/dashboard?ref=readme-sudr)
 
-Clone from Github 
-```
-git clone https://github.com/codedthemes/berry-free-react-admin-template.git
-```
+## Demo
+
+- [Dashboard](http://demos.creative-tim.com/soft-ui-dashboard-react/#/dashboard?ref=readme-sudr)
+- [Profile](https://demos.creative-tim.com/soft-ui-dashboard-react/#/profile?ref=readme-sudr)
+- [RTL](https://demos.creative-tim.com/soft-ui-dashboard-react/#/rtl?ref=readme-sudr)
+- [Sign In](https://demos.creative-tim.com/soft-ui-dashboard-react/#/authentication/sign-in?ref=readme-sudr)
+- [Sign Up](https://demos.creative-tim.com/soft-ui-dashboard-react/#/authentication/sign-up?ref=readme-sudr)
+
+[View More](https://demos.creative-tim.com/soft-ui-dashboard-react/#/dashboard?ref=readme-sudr).
+
+## Quick start
+
+Quick start options:
+
+- Buy from [Creative Tim](https://www.creative-tim.com/product/soft-ui-dashboard-react?ref=readme-sudr).
+
+## Terminal Commands
+
+1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
+2. Navigate to the root ./ directory of the product and run `yarn install` or `npm install` to install our local dependencies.
 
 ## Documentation
 
-[Berry documentation](https://codedthemes.gitbook.io/berry/) helps you out in all aspects from Installation to deployment.
+The documentation for the Soft UI Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/react/overview/soft-ui-dashboard/?ref=readme-sudr).
 
-## Technology Stack
+### What's included
 
- - [Material UI V5](https://material-ui.com/)
- - Built with React Hooks API
- - Redux & React Context API for State Management
- - React Router for Navigation Routing
- - Support of react-script
- - Code Splitting
- - CSS-in-JS where CSS is composed using JavaScript instead of defined in external files
+Within the download you'll find the following directories and files:
 
-## Author
+```
+soft-ui-dashboard-react
+    ├── public
+    │   ├── apple-icon.png
+    │   ├── favicon.png
+    │   ├── index.html
+    │   ├── manifest.json
+    │   └── robots.txt
+    ├── src
+    │   ├── assets
+    │   │   ├── images
+    │   │   └── theme
+    │   │       ├── base
+    │   │       ├── components
+    │   │       ├── functions
+    │   │       ├── index.js
+    │   │       └── theme-rtl.js
+    │   ├── components
+    │   │   ├── SuiAlert
+    │   │   ├── SuiAvatar
+    │   │   ├── SuiBadge
+    │   │   ├── SuiBox
+    │   │   ├── SuiButton
+    │   │   ├── SuiInput
+    │   │   ├── SuiPagination
+    │   │   ├── SuiProgress
+    │   │   └── SuiTypography
+    │   ├── context
+    │   ├── examples
+    │   │   ├── Breadcrumbs
+    │   │   ├── Cards
+    │   │   ├── Charts
+    │   │   ├── Configurator
+    │   │   ├── Footer
+    │   │   ├── Icons
+    │   │   ├── Items
+    │   │   ├── LayoutContainers
+    │   │   ├── Lists
+    │   │   ├── Navbars
+    │   │   ├── Sidenav
+    │   │   ├── Tables
+    │   │   └── Timeline
+    │   ├── layouts
+    │   │   ├── authentication
+    │   │   ├── billing
+    │   │   ├── dashboard
+    │   │   ├── profile
+    │   │   ├── rtl
+    │   │   ├── tables
+    │   │   └── virtual-reality
+    │   ├── App.js
+    │   ├── index.js
+    │   └── routes.js
+    ├── .eslintrc.json
+    ├── .prettierrc.json
+    ├── CHANGELOG.md
+    ├── ISSUE_TEMPLATE.md
+    ├── jsconfig.json
+    ├── LICENSE.md
+    ├── package.json
+    └── README.md
+```
 
-Berry is managed by Team [CodedThemes](https://codedthemes.com).
+## Browser Support
 
-## Issues
+At present, we officially aim to support the last two versions of the following browsers:
 
-Please generate a [Github issue](https://github.com/codedthemes/berry-free-react-admin-template/issues) if you found a bug in any version. We are trying to be responsive to resolve the issue.
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
-## License
+## Resources
 
- - Licensed cover under [MIT](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/LICENSE)
+- [Live Preview](https://demos.creative-tim.com/soft-ui-dashboard-react/#/dashboard?ref=readme-sudr)
+- [Buy Page](https://www.creative-tim.com/product/soft-ui-dashboard-react?ref=readme-sudr)
+- Documentation is [here](https://www.creative-tim.com/learning-lab/react/overview/soft-ui-dashboard/?ref=readme-sudr)
+- [License Agreement](https://www.creative-tim.com/license?ref=readme-sudr)
+- [Support](https://www.creative-tim.com/contact-us?ref=readme-sudr)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/soft-ui-dashboard-react/issues)
 
-## Berry - Nodejs version by Appseed
+## Reporting Issues
 
-- [Free Nodejs](https://appseed.us/product/react-node-js-berry-dashboard)
-- [Premium Berry Nodejs](https://appseed.us/full-stack/react-berry-dashboard)
+We use GitHub Issues as the official bug tracker for the Soft UI Dashboard React. Here are some advices for our users that want to report an issue:
 
-## More Free React Material Admin Templates
+1. Make sure that you are using the latest version of the Soft UI Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/soft-ui-dashboard-react?ref=readme-sudr).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
- - [Free Materially](https://codedthemes.com/item/materially-free-reactjs-admin-template/)
+## Technical Support or Questions
 
-## More Premium React Material Admin Templates
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-sudr) instead of opening an issue.
 
- - [Materially](https://codedthemes.com/item/materially-reactjs-admin-dashboard/)
- 
-## Follow us
- - Website [https://berrydashboard.io](https://berrydashboard.io)
- - Blog [https://blog.berrydashboard.io](https://blog.berrydashboard.io)
- - CodedThemes [https://codedthemes.com](https://codedthemes.com)
- - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
- - Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
- - Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
+## Licensing
+
+- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-sudr)
+- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sudr)
+
+## Useful Links
+
+- [More products](https://www.creative-tim.com/templates?ref=readme-sudr) from Creative Tim
+
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-sudr) from Creative Tim
+
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-sudr) (earn money)
+
+##### Social Media
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
