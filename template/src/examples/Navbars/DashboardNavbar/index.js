@@ -173,7 +173,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 </IconButton>
               </Link>
               <IconButton
-                size="small"
+                size="medium"
                 color="inherit"
                 sx={navbarMobileMenu}
                 onClick={handleMiniSidenav}
@@ -183,7 +183,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 </Icon>
               </IconButton>
               <IconButton
-                size="small"
+                size="medium"
                 color="inherit"
                 sx={navbarIconButton}
                 onClick={handleConfiguratorOpen}
@@ -191,7 +191,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 <Icon>settings</Icon>
               </IconButton>
               <IconButton
-                size="small"
+                size="medium"
                 color="inherit"
                 sx={navbarIconButton}
                 aria-controls="notification-menu"
