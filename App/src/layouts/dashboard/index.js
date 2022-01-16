@@ -52,7 +52,7 @@ function Dashboard() {
                   image="https://bit.ly/3Hlw1MQ"
                   category={{ color: "info", label: "house" }}
                   title="Shared Coworking"
-                  description="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons."
+                  description="이 음식점을 추천한다는 리뷰 1"
                   author={{
                     image: "https://bit.ly/3kDZgRd",
                     name: "Mathew Glock",
@@ -66,7 +66,7 @@ function Dashboard() {
                   image="https://bit.ly/3Hlw1MQ"
                   category={{ color: "info", label: "house" }}
                   title="Shared Coworking"
-                  description="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons."
+                  description="이 음식점을 추천한다는 리뷰 2"
                   author={{
                     image: "https://bit.ly/3kDZgRd",
                     name: "Mathew Glock",
@@ -80,7 +80,7 @@ function Dashboard() {
                   image="https://bit.ly/3Hlw1MQ"
                   category={{ color: "info", label: "house" }}
                   title="Shared Coworking"
-                  description="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons."
+                  description="이 음식점을 추천한다는 리뷰 3"
                   author={{
                     image: "https://bit.ly/3kDZgRd",
                     name: "Mathew Glock",
@@ -94,7 +94,7 @@ function Dashboard() {
                   image="https://bit.ly/3Hlw1MQ"
                   category={{ color: "info", label: "house" }}
                   title="Shared Coworking"
-                  description="Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons."
+                  description="이 음식점을 추천한다는 리뷰 4"
                   author={{
                     image: "https://bit.ly/3kDZgRd",
                     name: "Mathew Glock",
