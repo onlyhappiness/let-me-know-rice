@@ -45,3 +45,65 @@ https://www.creative-tim.com/product/soft-ui-dashboard-react
 > sql(mysql, postgresql)
 
 > nosql(mongodb)
+
+
+**대시보드**
+일단 대시보드에서는 추천하는 음식점을 보여주는 게 좋겠당
+
+추천하는 해당 음식점을 보여주고 몇 명이 좋아하는 지도 알려주면 좋겠네
+ 굿굿
+
+캬 날씨도 알려주면 딱이네
+날씨에 따라 먹고 싶은 음식이 생각날 수도 있으니까
+
+### 참고
+https://www.pinterest.co.kr/pin/488429522088384005/
+
+https://www.pinterest.co.kr/pin/557531628879838661/
+
+---
+
+## 2022.01.14
+쓰읍.. mui에 slider가 없네...
+swiper.js를 써야하나..
+
+### 참고
+https://mui.com/components/buttons/#complex-button
+
+https://mui.com/components/floating-action-button/#basic-fab
+
+https://mui.com/components/radio-buttons/#show-error
+
+https://mui.com/components/radio-buttons/#show-error
+
+https://mui.com/components/lists/#align-list-items
+
+https://mui.com/components/dialogs/
+
+https://mui.com/components/progress/
+
+https://mui.com/components/cards/#complex-interaction
+
+대시보드 페이지
+> Build by developers
+
+프로필 페이지 
+> Conversations
+> Projects
+
+## 2022.01.16
+### 참고
+https://www.creative-tim.com/learning-lab/react/overview/soft-ui-dashboard/
+
+> 캬아~ mui에서 제공하는 component보다 휠씬 더 좋다!
+
+![예뻐](https://user-images.githubusercontent.com/79133968/149645835-47497101-025a-48bc-be49-d99f5239770e.jpg)
+
+> 날씨
+>> https://www.creative-tim.com/learning-lab/react/weather-card/soft-ui-dashboard/
+
+> https://www.creative-tim.com/learning-lab/react/profile-cards/soft-ui-dashboard/
+
+> https://www.creative-tim.com/learning-lab/react/project-cards/soft-ui-dashboard/
+
+> 
