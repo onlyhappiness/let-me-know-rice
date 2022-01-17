@@ -14,15 +14,17 @@ function View() {
   useEffect(() => {
     const fetchMaps = async () => {
       try {
-        setError(null);
-        setLoading(true);
+        // setError(null);
+        // setLoading(true);
         const response = await axios.get(
-          `//dapi.kakao.com/v2/maps/sdk.js?appkey=${REACT_APP_KAKAO_MAP_API}&libraries=services,clusterer`
+          `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.REACT_APP_KAKAO_MAP_API}&libraries=services,clusterer`
         );
+        return response;
       } catch (error) {
-        setError(error);
+        // setError(error);
+        console.log(error);
       }
-      setLoading(false);
+      // setLoading(false);
     };
     fetchMaps();
   }, []);
