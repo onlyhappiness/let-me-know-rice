@@ -11,23 +11,23 @@ function View() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchMaps = async () => {
-      try {
-        // setError(null);
-        // setLoading(true);
-        const response = await axios.get(
-          `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.REACT_APP_KAKAO_MAP_API}&libraries=services,clusterer`
-        );
-        return response;
-      } catch (error) {
-        // setError(error);
-        console.log(error);
-      }
-      // setLoading(false);
-    };
-    fetchMaps();
-  }, []);
+  // useEffect(() => {
+  //   const fetchMaps = async () => {
+  //     try {
+  //       // setError(null);
+  //       // setLoading(true);
+  //       const response = await axios.get(
+  //         `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.REACT_APP_KAKAO_MAP_API}&libraries=services,clusterer`
+  //       );
+  //       return response;
+  //     } catch (error) {
+  //       // setError(error);
+  //       console.log(error);
+  //     }
+  //     // setLoading(false);
+  //   };
+  //   fetchMaps();
+  // }, []);
 
   return (
     <>
