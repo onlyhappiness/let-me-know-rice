@@ -1,6 +1,7 @@
 // Soft UI Dashboard React layouts
 import Dashboard from "layouts/dashboard";
-import View from "layouts/view";
+import Map from "layouts/map";
+import Recommendation from "layouts/recommendation";
 
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
@@ -29,11 +30,20 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "View",
-    key: "view",
-    route: "/view",
+    name: "Map",
+    key: "map",
+    route: "/map",
     icon: <Shop size="12px" />,
-    component: View,
+    component: Map,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Recommendation",
+    key: "recommendation",
+    route: "/recommendation",
+    icon: <Shop size="12px" />,
+    component: Recommendation,
     noCollapse: true,
   },
 ];
