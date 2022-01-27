@@ -109,7 +109,7 @@ function Dashboard() {
             {/* 옼이 grid가 총 12분할임 */}
             <Grid container spacing={3}>
               <Grid item xs={12} lg={7}>
-                {/* 실시간 댓글 및 리뷰들 */}
+                실시간 댓글 및 리뷰들
                 <TimelineList title="Timeline">
                   <TimelineItem
                     color="success"
@@ -138,7 +138,7 @@ function Dashboard() {
                 </TimelineList>
               </Grid>
               <Grid item xs={12} lg={5}>
-                {/* 여기에 날씨 */}
+                여기에 날씨
                 <WorkWithTheRockets />
               </Grid>
             </Grid>
