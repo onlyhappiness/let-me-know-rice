@@ -1,31 +1,42 @@
 ## 템플릿 찾는 중..
 
-### 1. 첫번째 템플릿
-> 와.. 이거 뭐냐.. 완전 멋져... o((>ω< ))o
-https://www.creative-tim.com/product/vision-ui-dashboard-react
-> 우와.. 세상에... 심지어 무료야..
+---
 
-### 2. 두번째 템플릿
-> 이것도 나쁘지 않네..
-https://www.creative-tim.com/product/soft-ui-dashboard-react
+> https://www.creative-tim.com/product/vision-ui-dashboard-react
+
+> https://www.creative-tim.com/product/soft-ui-dashboard-react
+
+<br>
+<br>
+
+### concept
 
 ---
 
-## 오케 두번째 템플릿으로 결정!
-> 음식 관련된 템플릿이 청색으로 화려하면 괜히 좀 그럴듯..
->> 엄격한 eslint는 과감히 삭제
->> 별 것도 아닌 거에 에러 발생하니 보기 싫엉
+![밥줘_기획](https://user-images.githubusercontent.com/79133968/166256929-9793f5dd-12d7-42d7-9417-d6249cbedbe4.png)
 
+<br>
 
-## 2022.01.12
-> 음.. 일단 템플릿은 내가 잘 쓰도록 정리된 거 같앙! o((>ω< ))o
+![밥줘_기획 (1)](https://user-images.githubusercontent.com/79133968/166256924-3ce24604-e746-4415-a947-8d870af4168a.png)
+
+<br>
+
+![밥줘_기획 (2)](https://user-images.githubusercontent.com/79133968/166256935-b438e7ea-0d9e-45f3-a53f-68a95059bca7.png)
+
+<br>
+
+![밥줘_기획 (3)](https://user-images.githubusercontent.com/79133968/166256934-3d15aa01-d830-4f16-adbc-f433b50527d6.png)
+
+<br>
 
 > 명확하게 해야 할 것!!
->> 음식을 주문 하는 것이 아님
->> 말 그대로 밥 먹을 곳을 알려주는 것이 목적!
+> 음식을 주문 하는 것이 아님
+> 말 그대로 밥 먹을 곳을 알려주는 것이 목적!
 
 **정리되어야 하는 것**
+
 1. 카테고리 (어떤 카테고리가 있어야 하는지)
+
 > 지도
 
 > 인기 많은 것 (추천과 중복되려나..?)
@@ -38,74 +49,60 @@ https://www.creative-tim.com/product/soft-ui-dashboard-react
 
 > 제일 중요한 가격!(그 음식에 대한 가격 등)
 
-
 2. 데이터 베이스 (어떤 데이터베이스를 사용할 지)
-> firebase
 
-> sql(mysql, postgresql)
-
-> nosql(mongodb)
-
+> mongodb
+> 현재 내가 제일 자신있는 db여서 mongodb로 선정했다.
 
 **대시보드**
 일단 대시보드에서는 추천하는 음식점을 보여주는 게 좋겠당
 
 추천하는 해당 음식점을 보여주고 몇 명이 좋아하는 지도 알려주면 좋겠네
- 굿굿
+굿굿
 
 캬 날씨도 알려주면 딱이네
 날씨에 따라 먹고 싶은 음식이 생각날 수도 있으니까
 
+<br>
+<br>
+
 ### 참고
+
+---
+
+#### 대시보드 페이지
+
 https://www.pinterest.co.kr/pin/488429522088384005/
 
 https://www.pinterest.co.kr/pin/557531628879838661/
 
+<br>
+<br>
+
+### 추천
+
 ---
 
-## 2022.01.14
-쓰읍.. mui에 slider가 없네...
-swiper.js를 써야하나..
+> https://i.pinimg.com/564x/04/7d/72/047d726259452bf2bd852e2554e86fa7.jpg
 
-### 참고
-https://mui.com/components/buttons/#complex-button
+<br>
+<br>
 
-https://mui.com/components/floating-action-button/#basic-fab
+### 날씨
 
-https://mui.com/components/radio-buttons/#show-error
+---
 
-https://mui.com/components/radio-buttons/#show-error
-
-https://mui.com/components/lists/#align-list-items
-
-https://mui.com/components/dialogs/
-
-https://mui.com/components/progress/
-
-https://mui.com/components/cards/#complex-interaction
-
-대시보드 페이지
-> Build by developers
-
-프로필 페이지 
-> Conversations
-> Projects
-
-## 2022.01.16
-### 참고
-https://www.creative-tim.com/learning-lab/react/overview/soft-ui-dashboard/
-
-> 캬아~ mui에서 제공하는 component보다 휠씬 더 좋다!
-
-![예뻐](https://user-images.githubusercontent.com/79133968/149645835-47497101-025a-48bc-be49-d99f5239770e.jpg)
-
-> 날씨
->> https://www.creative-tim.com/learning-lab/react/weather-card/soft-ui-dashboard/
+> https://www.creative-tim.com/learning-lab/react/weather-card/soft-ui-dashboard/
 
 > https://www.creative-tim.com/learning-lab/react/profile-cards/soft-ui-dashboard/
 
 > https://www.creative-tim.com/learning-lab/react/project-cards/soft-ui-dashboard/
 
+<br>
+<br>
+
 ### MAP
+
+---
 
 > https://react-kakao-maps-sdk.jaeseokim.dev/docs/intro
