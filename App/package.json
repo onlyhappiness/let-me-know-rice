@@ -2,17 +2,8 @@
   "name": "soft-ui-dashboard-react",
   "version": "3.0.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "description": "Material UI version of Soft UI Dashboard by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/soft-ui-dashboard-react/#/dashboard",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/soft-ui-dashboard-react/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/soft-ui-dashboard-react.git"
-  },
+  "homepage": "./",
+  "main": "src/main.js",
   "dependencies": {
     "@emotion/cache": "11.4.0",
     "@emotion/react": "11.4.1",
@@ -27,6 +18,7 @@
     "chart.js": "3.4.1",
     "chroma-js": "2.1.2",
     "dotenv": "^12.0.4",
+    "electron-is-dev": "^2.0.0",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-chartjs-2": "3.0.4",
@@ -44,10 +36,13 @@
     "web-vitals": "1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"yarn react-start\" \"yarn electron\"",
+    "react-start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "electron": "wait-on http://localhost:3000 && electron .",
+    "electron-start": "electron .",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
   },
   "browserslist": {
@@ -63,6 +58,9 @@
     ]
   },
   "devDependencies": {
-    "prettier": "2.3.2"
+    "concurrently": "^7.1.0",
+    "electron": "^18.2.0",
+    "prettier": "2.3.2",
+    "wait-on": "^6.0.1"
   }
 }
