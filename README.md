@@ -29,6 +29,12 @@
 
 <br>
 
+> https://i.pinimg.com/564x/0d/d8/0b/0dd80bbeb7394eaab0e919ddab0db92b.jpg
+
+> https://i.pinimg.com/564x/43/ed/fe/43edfe1f25cb5958c8f9f29b297ee86c.jpg
+
+<br>
+
 > 명확하게 해야 할 것!!
 > 음식을 주문 하는 것이 아님
 > 말 그대로 밥 먹을 곳을 알려주는 것이 목적!
