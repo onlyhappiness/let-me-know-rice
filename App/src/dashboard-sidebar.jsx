@@ -1,61 +1,56 @@
 /* eslint-disable */
-import React from 'react';
+import React from "react";
 
-import 'antd/dist/antd.css';
-import { Layout, Menu, Typography } from 'antd';
+import "antd/dist/antd.css";
+import { Layout, Menu, Typography } from "antd";
 
-import './styles/dashboard-sider.css';
+import "./styles/dashboard-sider.css";
 
 const { Sider } = Layout;
 const { Title } = Typography;
 
 import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
   HomeOutlined,
-} from '@ant-design/icons';
+  LikeOutlined,
+} from "@ant-design/icons";
 
 function DashboardSidebar() {
   const routesItems = [
     {
-      key: '1',
+      key: "1",
       icon: <HomeOutlined />,
-      label: 'Home',
+      label: "Home",
     },
-    // {
-    //   key: "2",
-    //   icon: <VideoCameraOutlined />,
-    //   label: "nav 2",
-    // },
-    // {
-    //   key: "3",
-    //   icon: <UploadOutlined />,
-    //   label: "nav 3",
-    // },
+    {
+      key: "2",
+      icon: <LikeOutlined />,
+      label: "Recommend",
+    },
   ];
 
   return (
     <>
-      <Sider className='sider'>
-        {/* <div className='logo'>로고 넣넣</div> */}
+      {/* <div className='logo'>로고 넣넣</div> */}
 
-        <div className='logo'>
-          <Title level={4} className='logo_title'>
+      <div className="logo">
+        {/* <Title level={4} className="logo_title">
             밥 줘
-          </Title>
-        </div>
+          </Title> */}
+      </div>
 
-        <Menu
-          // theme="dark"
-          className='menu'
-          mode='inline'
-          defaultSelectedKeys={['1']}
-          items={routesItems}
-        />
-      </Sider>
+      {/* FIXME: Menu */}
+      <Menu
+        // theme="dark"
+        // mode="inline"
+        defaultSelectedKeys={["1"]}
+        items={routesItems}
+        style={{
+          backgroundColor: "#C8FCEA",
+        }}
+      >
+        {/* <Menu.Item>1</Menu.Item>
+        <Menu.Item>2</Menu.Item> */}
+      </Menu>
     </>
   );
 }
