@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 
 import "antd/dist/antd.css";
-// import "./styles/dashboard-layout.css";
 import { Layout, Menu } from "antd";
 import DashboardSidebar from "./dashboard-sidebar";
 import DashboardHeader from "./dashboard-header";
@@ -36,13 +35,17 @@ function DashboardLayout() {
           backgroundColor: "#C8FCEA",
         }}
       >
-        <DashboardSidebar />
+        <DashboardSidebar
+        // routesItem={routesItem}
+        />
       </Sider>
 
-      <Layout className="site-layout">
-        {/* <DashboardHeader /> */}
-
-        <Header>
+      <Layout>
+        <Header
+          style={{
+            padding: "0px 24px",
+          }}
+        >
           {React.createElement(
             collapsed
               ? MenuUnfoldOutlined
@@ -53,10 +56,12 @@ function DashboardLayout() {
             }
           )}
         </Header>
-        <Content>
-          <div className="layout-background">
-            Content
-          </div>
+        <Content
+          style={{
+            margin: 16,
+          }}
+        >
+          Content
         </Content>
       </Layout>
     </Layout>
