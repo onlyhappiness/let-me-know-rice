@@ -1,6 +1,6 @@
 import { Header } from 'antd/lib/layout/layout';
 import React from 'react';
-import './styles/dashboard-header.css';
+import '../../styles/dashboard-header.css';
 
 function DashboardHeader() {
   return (

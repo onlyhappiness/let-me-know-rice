@@ -1,21 +1,16 @@
 /* eslint-disable */
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import "antd/dist/antd.css";
-import { Layout, Menu } from "antd";
-import DashboardSidebar from "./dashboard-sidebar";
-import DashboardHeader from "./dashboard-header";
-
+import 'antd/dist/antd.css';
+import { Layout, Menu } from 'antd';
+import DashboardSidebar from './dashboard-sidebar';
+import DashboardHeader from './dashboard-header';
 const { Header, Sider, Content } = Layout;
 
-import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-} from "@ant-design/icons";
+import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 
 function DashboardLayout() {
-  const [collapsed, setcollapsed] =
-    useState(true);
+  const [collapsed, setcollapsed] = useState(true);
   const toggle = () => {
     setcollapsed(!collapsed);
   };
@@ -23,8 +18,8 @@ function DashboardLayout() {
   return (
     <Layout
       style={{
-        width: "100%",
-        height: "100vh",
+        width: '100%',
+        height: '100vh',
       }}
     >
       <Sider
@@ -32,26 +27,22 @@ function DashboardLayout() {
         collapsible
         collapsed={collapsed}
         style={{
-          backgroundColor: "#C8FCEA",
+          backgroundColor: '#C8FCEA',
         }}
       >
-        <DashboardSidebar
-        // routesItem={routesItem}
-        />
+        <DashboardSidebar />
       </Sider>
 
       <Layout>
         <Header
           style={{
-            padding: "0px 24px",
+            padding: '0px 24px',
           }}
         >
           {React.createElement(
-            collapsed
-              ? MenuUnfoldOutlined
-              : MenuFoldOutlined,
+            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
             {
-              className: "trigger",
+              className: 'trigger',
               onClick: toggle,
             }
           )}
