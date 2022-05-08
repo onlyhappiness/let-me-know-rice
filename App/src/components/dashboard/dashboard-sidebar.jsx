@@ -10,7 +10,7 @@ const { Sider } = Layout;
 
 // import routes from '../../routes';
 
-function DashboardSidebar() {
+function DashboardSidebar({ collapsed }) {
   // const [routesItems, setRoutesItems] = useState(routes);
 
   let navigate = useNavigate();
@@ -20,7 +20,7 @@ function DashboardSidebar() {
   // };
 
   return (
-    <Sider>
+    <Sider trigger={null} collapsible collapsed={collapsed}>
       <div
         className='logo'
         style={{
