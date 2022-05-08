@@ -8,16 +8,14 @@ import '../../styles/dashboard-sider.css';
 import { Layout, Menu } from 'antd';
 const { Sider } = Layout;
 
+// TODO: icons
+import { HomeOutlined, LikeOutlined } from '@ant-design/icons';
+
 // import routes from '../../routes';
 
 function DashboardSidebar({ collapsed }) {
   // const [routesItems, setRoutesItems] = useState(routes);
-
   let navigate = useNavigate();
-
-  // const handleRoutesNavigation = (e) => {
-  //   console.log(e?.domEvent?.target);
-  // };
 
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -33,27 +31,26 @@ function DashboardSidebar({ collapsed }) {
 
       <Menu
       // FIXME: Menu
-      // onClick={handleRoutesNavigation}
       // defaultSelectedKeys={['home']}
       // items={routesItems}
       >
         <Menu.Item
           key={'home'}
           onClick={() => {
-            // console.log('클릭함');
             navigate('/');
           }}
         >
-          Home
+          <HomeOutlined />
+          <span>Home</span>
         </Menu.Item>
         <Menu.Item
           key={'like'}
           onClick={() => {
-            // console.log('클릭함222');
             navigate('/like');
           }}
         >
-          Like
+          <LikeOutlined />
+          <span>Like</span>
         </Menu.Item>
       </Menu>
     </Sider>
