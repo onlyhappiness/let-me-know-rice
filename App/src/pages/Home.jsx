@@ -9,7 +9,7 @@ const { Title } = Typography;
 
 function Home() {
   return (
-    <Layout style={{ padding: '24px' }}>
+    <div>
       <Content style={{}}>
         <Title level={3} style={{ padding: '12px' }}>
           Welcome to <br></br> Let me know Rice 🤤
@@ -107,6 +107,40 @@ function Home() {
               />
             </Card>
           </Col>
+          <Col span={6}>
+            <Card
+              hoverable
+              cover={
+                <img
+                  alt='example'
+                  height={220}
+                  src='https://i.pinimg.com/564x/1d/f1/bb/1df1bb675b3bd2ab585b7358a0793bd8.jpg'
+                />
+              }
+            >
+              <Meta
+                title='Europe Street beat'
+                description='www.instagram.com'
+              />
+            </Card>
+          </Col>
+          <Col span={6}>
+            <Card
+              hoverable
+              cover={
+                <img
+                  alt='example'
+                  height={220}
+                  src='https://i.pinimg.com/564x/1d/f1/bb/1df1bb675b3bd2ab585b7358a0793bd8.jpg'
+                />
+              }
+            >
+              <Meta
+                title='Europe Street beat'
+                description='www.instagram.com'
+              />
+            </Card>
+          </Col>
         </Row>
       </Content>
       <Content style={{ display: 'flex', marginTop: '24px' }}>
@@ -114,7 +148,7 @@ function Home() {
         <div style={{ width: '60%' }}>추천 메뉴?</div>
         <div style={{ width: '40%' }}>weather</div>
       </Content>
-    </Layout>
+    </div>
   );
 }
 

@@ -18,7 +18,14 @@ function DashboardSidebar({ collapsed }) {
   let navigate = useNavigate();
 
   return (
-    <Sider trigger={null} collapsible collapsed={collapsed}>
+    <Sider
+      trigger={null}
+      collapsible
+      collapsed={collapsed}
+      style={{
+        overflow: 'auto',
+      }}
+    >
       <div
         className='logo'
         style={{

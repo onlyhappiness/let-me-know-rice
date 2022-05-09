@@ -7,6 +7,7 @@ import DashboardHeader from './dashboard-header';
 import DashboardSidebar from './dashboard-sidebar';
 import Home from '../../pages/Home';
 import Like from '../../pages/Like';
+import { Content } from 'antd/lib/layout/layout';
 
 function DashboardLayout() {
   // TODO: Toggle
@@ -16,16 +17,23 @@ function DashboardLayout() {
   };
 
   return (
-    <Layout style={{ width: '100%', height: '100vh' }}>
+    <Layout style={{ width: '100%', height: '100vh' }} hasSider>
       <DashboardSidebar collapsed={collapsed} />
 
       <Layout>
         <DashboardHeader collapsed={collapsed} toggle={toggle} />
 
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/like' element={<Like />} />
-        </Routes>
+        <Content
+          style={{
+            margin: '16px ',
+            overflow: 'initial',
+          }}
+        >
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/like' element={<Like />} />
+          </Routes>
+        </Content>
       </Layout>
     </Layout>
   );
