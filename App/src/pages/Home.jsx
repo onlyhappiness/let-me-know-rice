@@ -1,10 +1,10 @@
 import React from 'react';
 
 import 'antd/dist/antd.css';
-import { Button, Card, Col, Layout, Menu, Row, Typography } from 'antd';
+import { Button, Card, Col, Layout, Row, Typography } from 'antd';
 import Meta from 'antd/lib/card/Meta';
 
-const { Header, Sider, Content } = Layout;
+const { Content } = Layout;
 const { Title } = Typography;
 
 function Home() {

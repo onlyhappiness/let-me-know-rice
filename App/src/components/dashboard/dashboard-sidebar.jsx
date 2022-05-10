@@ -24,6 +24,11 @@ function DashboardSidebar({ collapsed }) {
       collapsed={collapsed}
       style={{
         overflow: 'auto',
+        height: '100vh',
+        position: 'fixed',
+        left: 0,
+        top: 0,
+        bottom: 0,
       }}
     >
       <div
