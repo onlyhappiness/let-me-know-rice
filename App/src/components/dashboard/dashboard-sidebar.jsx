@@ -9,7 +9,11 @@ import { Layout, Menu } from 'antd';
 const { Sider } = Layout;
 
 // TODO: icons
-import { HomeOutlined, LikeOutlined } from '@ant-design/icons';
+import {
+  HomeOutlined,
+  LikeOutlined,
+  EnvironmentOutlined,
+} from '@ant-design/icons';
 
 // import routes from '../../routes';
 
@@ -63,6 +67,15 @@ function DashboardSidebar({ collapsed }) {
         >
           <LikeOutlined />
           <span>Like</span>
+        </Menu.Item>
+        <Menu.Item
+          key={'map'}
+          onClick={() => {
+            navigate('/map');
+          }}
+        >
+          <EnvironmentOutlined />
+          <span>Map</span>
         </Menu.Item>
       </Menu>
     </Sider>

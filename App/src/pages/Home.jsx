@@ -39,7 +39,7 @@ function Home() {
         </div>
 
         <Row gutter={[16, 16]} style={{ marginTop: '16px' }}>
-          <Col span={6}>
+          <Col span={8}>
             <Card
               hoverable
               cover={
@@ -56,7 +56,7 @@ function Home() {
               />
             </Card>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <Card
               hoverable
               cover={
@@ -73,7 +73,7 @@ function Home() {
               />
             </Card>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <Card
               hoverable
               cover={
@@ -90,7 +90,7 @@ function Home() {
               />
             </Card>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <Card
               hoverable
               cover={
@@ -107,7 +107,7 @@ function Home() {
               />
             </Card>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <Card
               hoverable
               cover={
@@ -124,7 +124,7 @@ function Home() {
               />
             </Card>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <Card
               hoverable
               cover={
