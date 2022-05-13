@@ -63,15 +63,21 @@ function DashboardLayout() {
     setcollapsed(!collapsed);
   };
 
+  console.log('나오자=====', collapsed);
+
   return (
     <Layout hasSider>
-      <DashboardSidebar />
+      <DashboardSidebar collapsed={collapsed} />
       <Layout
-        style={{
-          marginLeft: 200,
-        }}
+        style={
+          collapsed
+            ? {
+                marginLeft: 80,
+              }
+            : { marginLeft: 200 }
+        }
       >
-        <DashboardHeader />
+        <DashboardHeader collapsed={collapsed} toggle={toggle} />
         <Content
           style={{
             overflow: 'initial',
