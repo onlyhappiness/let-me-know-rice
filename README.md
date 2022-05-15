@@ -1,34 +1,49 @@
-### ant-design
+## 밥줘(Let Me Know Rice)
 
 ---
+
+<br>
+
+### Index
+
+---
+
+1. <a href="https://github.com/onlyhappiness/Let-Me-Know-Rice/tree/Demo">데모</a>
+
+2. [개발-참고-자료](#1.-개발-참고-자료)
+
+<br>
+<br>
+
+### 1. 개발 참고 자료
+
+---
+
+#### ant-design
 
 > https://ant.design/components/overview/
 
 <br>
 
-### ant-design-icon
-
----
+#### ant-design-icon
 
 > https://ant.design/components/icon/
 
 <br>
 <br>
 
-### React-router-dom
+#### React-router-dom
 
----
-
+```
 기존에 계속 react를 해왔지만, Next.js를 경험하고 너무 Next.js가 너무 편하고 좋았다. 그래서 react-router-dom의 사용법을 까먹었다.
 
 다시 처음부터 기초부터 차근차근 해보자
+```
 
 <br>
 <br>
 
-### concept
-
----
+#### Concept
 
 ![밥줘_기획](https://user-images.githubusercontent.com/79133968/166256929-9793f5dd-12d7-42d7-9417-d6249cbedbe4.png)
 
@@ -52,46 +67,33 @@
 
 <br>
 
-> 명확하게 해야 할 것!!
 > 음식을 주문 하는 것이 아님
 > 말 그대로 밥 먹을 곳을 알려주는 것이 목적!
 
+<br>
+
 **정리되어야 하는 것**
 
-1. 카테고리 (어떤 카테고리가 있어야 하는지)
+1. 카테고리
+
+> 음식에 대한 카테고리(분식, 중식, 한식 등)
 
 > 지도
 
-> 인기 많은 것 (추천과 중복되려나..?)
-
 > 추천(가까운 곳, 맛있는 곳, 가격 등)
-
-> 음식에 대한 카테고리(분식, 중식, 한식 등)
 
 > 리뷰와 리플 등(음식점에 대한 평가나 점수 등)
 
 > 제일 중요한 가격!(그 음식에 대한 가격 등)
 
-2. 데이터 베이스 (어떤 데이터베이스를 사용할 지)
+<br>
+
+2. 데이터 베이스
 
 > mongodb
-> 현재 내가 제일 자신있는 db여서 mongodb로 선정했다.
-
-**대시보드**
-일단 대시보드에서는 추천하는 음식점을 보여주는 게 좋겠당
-
-추천하는 해당 음식점을 보여주고 몇 명이 좋아하는 지도 알려주면 좋겠네
-굿굿
-
-캬 날씨도 알려주면 딱이네
-날씨에 따라 먹고 싶은 음식이 생각날 수도 있으니까
 
 <br>
 <br>
-
-### 참고
-
----
 
 #### 대시보드 페이지
 
@@ -102,18 +104,14 @@ https://www.pinterest.co.kr/pin/557531628879838661/
 <br>
 <br>
 
-### 추천
-
----
+#### 추천
 
 > https://i.pinimg.com/564x/04/7d/72/047d726259452bf2bd852e2554e86fa7.jpg
 
 <br>
 <br>
 
-### 날씨
-
----
+#### 날씨
 
 > https://www.creative-tim.com/learning-lab/react/weather-card/soft-ui-dashboard/
 
@@ -124,8 +122,6 @@ https://www.pinterest.co.kr/pin/557531628879838661/
 <br>
 <br>
 
-### MAP
-
----
+#### MAP
 
 > https://react-kakao-maps-sdk.jaeseokim.dev/docs/intro
