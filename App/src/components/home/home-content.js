@@ -1,7 +1,14 @@
 import React from 'react';
 
+// swiper
+import { Pagination, Scrollbar } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import 'antd/dist/antd.css';
-import { Button, Card, Col, Layout, Row, Typography } from 'antd';
+import { Button, Card, Layout, Typography } from 'antd';
 import Meta from 'antd/lib/card/Meta';
 
 const { Content } = Layout;
@@ -12,8 +19,18 @@ function HomeContent() {
     <div>
       <Content style={{}}>
         <Title level={3} style={{ padding: '12px' }}>
-          Welcome to <br></br> Let me know Rice 🤤
+          Welcome back, Bread 👋
+          {/* Let me know Rice 🤤 */}
         </Title>
+        <div
+          style={{
+            // height: '20%',
+            border: `1px solid black`,
+            height: '100px',
+          }}
+        >
+          추천하는 곳으로 이동
+        </div>
         <div
           style={{
             display: 'flex',
@@ -38,8 +55,17 @@ function HomeContent() {
           </Button>
         </div>
 
-        <Row gutter={[16, 16]} style={{ marginTop: '16px' }}>
-          <Col span={8}>
+        {/* FIXME: Swiper 적용  */}
+        <Swiper
+          modules={[Pagination, Scrollbar]}
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+          scrollbar={{ draggable: true }}
+          // pagination={{ clickable: true }}
+        >
+          <SwiperSlide>
             <Card
               hoverable
               cover={
@@ -55,8 +81,8 @@ function HomeContent() {
                 description='www.instagram.com'
               />
             </Card>
-          </Col>
-          <Col span={8}>
+          </SwiperSlide>
+          <SwiperSlide>
             <Card
               hoverable
               cover={
@@ -72,8 +98,8 @@ function HomeContent() {
                 description='www.instagram.com'
               />
             </Card>
-          </Col>
-          <Col span={8}>
+          </SwiperSlide>
+          <SwiperSlide>
             <Card
               hoverable
               cover={
@@ -89,8 +115,8 @@ function HomeContent() {
                 description='www.instagram.com'
               />
             </Card>
-          </Col>
-          <Col span={8}>
+          </SwiperSlide>
+          <SwiperSlide>
             <Card
               hoverable
               cover={
@@ -106,44 +132,10 @@ function HomeContent() {
                 description='www.instagram.com'
               />
             </Card>
-          </Col>
-          <Col span={8}>
-            <Card
-              hoverable
-              cover={
-                <img
-                  alt='example'
-                  height={220}
-                  src='https://i.pinimg.com/564x/1d/f1/bb/1df1bb675b3bd2ab585b7358a0793bd8.jpg'
-                />
-              }
-            >
-              <Meta
-                title='Europe Street beat'
-                description='www.instagram.com'
-              />
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card
-              hoverable
-              cover={
-                <img
-                  alt='example'
-                  height={220}
-                  src='https://i.pinimg.com/564x/1d/f1/bb/1df1bb675b3bd2ab585b7358a0793bd8.jpg'
-                />
-              }
-            >
-              <Meta
-                title='Europe Street beat'
-                description='www.instagram.com'
-              />
-            </Card>
-          </Col>
-        </Row>
+          </SwiperSlide>
+        </Swiper>
       </Content>
-      <Content style={{ display: 'flex', marginTop: '24px' }}>
+      <Content style={{ display: 'flex', marginTop: '40px' }}>
         {/* FIXME: Grid */}
         <div style={{ width: '60%' }}>추천 메뉴?</div>
         <div style={{ width: '40%' }}>weather</div>

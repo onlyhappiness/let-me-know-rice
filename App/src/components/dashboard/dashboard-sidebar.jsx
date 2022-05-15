@@ -15,10 +15,7 @@ import {
   EnvironmentOutlined,
 } from '@ant-design/icons';
 
-// import routes from '../../routes';
-
 function DashboardSidebar({ collapsed }) {
-  // const [routesItems, setRoutesItems] = useState(routes);
   let navigate = useNavigate();
 
   return (

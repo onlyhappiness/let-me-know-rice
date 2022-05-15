@@ -42,11 +42,6 @@
 // export default DashboardLayout;
 
 import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
-
-import Home from '../../pages/Home';
-import Like from '../../pages/Like';
-import Map from '../../pages/Map';
 
 // TODO: Antd
 import 'antd/dist/antd.css';
@@ -84,12 +79,6 @@ function DashboardLayout({ component }) {
             // height: '100vh',
           }}
         >
-          {/* <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/like' element={<Like />} />
-            <Route path='/map' element={<Map />} />
-          </Routes> */}
-          {/* <Component /> */}
           {component}
         </Content>
       </Layout>

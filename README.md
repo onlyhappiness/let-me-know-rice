@@ -61,10 +61,6 @@
 
 <br>
 
-> https://i.pinimg.com/564x/0d/d8/0b/0dd80bbeb7394eaab0e919ddab0db92b.jpg
-
-> https://i.pinimg.com/564x/43/ed/fe/43edfe1f25cb5958c8f9f29b297ee86c.jpg
-
 <br>
 
 > 음식을 주문 하는 것이 아님
@@ -97,9 +93,13 @@
 
 #### 대시보드 페이지
 
-https://www.pinterest.co.kr/pin/488429522088384005/
+> https://i.pinimg.com/564x/0d/d8/0b/0dd80bbeb7394eaab0e919ddab0db92b.jpg
 
-https://www.pinterest.co.kr/pin/557531628879838661/
+> https://i.pinimg.com/564x/43/ed/fe/43edfe1f25cb5958c8f9f29b297ee86c.jpg
+
+> https://i.pinimg.com/564x/08/8f/82/088f8279b409198717d2098afb533a02.jpg
+
+> https://i.pinimg.com/564x/f7/b5/ca/f7b5ca63e5ef793a2bd833f650202bd8.jpg
 
 <br>
 <br>
@@ -108,16 +108,16 @@ https://www.pinterest.co.kr/pin/557531628879838661/
 
 > https://i.pinimg.com/564x/04/7d/72/047d726259452bf2bd852e2554e86fa7.jpg
 
+> https://i.pinimg.com/564x/31/6f/6b/316f6b7be6470a76563e9c78cb2135cf.jpg
+
+> https://yoda.hypeople.studio/yoda-admin-template/react/main/widgets/cards/advance
+
 <br>
 <br>
 
 #### 날씨
 
-> https://www.creative-tim.com/learning-lab/react/weather-card/soft-ui-dashboard/
-
-> https://www.creative-tim.com/learning-lab/react/profile-cards/soft-ui-dashboard/
-
-> https://www.creative-tim.com/learning-lab/react/project-cards/soft-ui-dashboard/
+>
 
 <br>
 <br>
@@ -125,3 +125,10 @@ https://www.pinterest.co.kr/pin/557531628879838661/
 #### MAP
 
 > https://react-kakao-maps-sdk.jaeseokim.dev/docs/intro
+
+<br>
+<br>
+
+#### swiper
+
+> https://swiperjs.com/react
