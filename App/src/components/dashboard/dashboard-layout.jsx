@@ -56,14 +56,12 @@ import DashboardSidebar from './dashboard-sidebar';
 import DashboardHeader from './dashboard-header';
 const { Content } = Layout;
 
-function DashboardLayout() {
+function DashboardLayout({ component }) {
   // TODO: Toggle
   const [collapsed, setcollapsed] = useState(true);
   const toggle = () => {
     setcollapsed(!collapsed);
   };
-
-  console.log('나오자=====', collapsed);
 
   return (
     <Layout hasSider>
@@ -86,11 +84,13 @@ function DashboardLayout() {
             // height: '100vh',
           }}
         >
-          <Routes>
+          {/* <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/like' element={<Like />} />
             <Route path='/map' element={<Map />} />
-          </Routes>
+          </Routes> */}
+          {/* <Component /> */}
+          {component}
         </Content>
       </Layout>
     </Layout>
