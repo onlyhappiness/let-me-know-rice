@@ -112,12 +112,6 @@
 
 > https://yoda.hypeople.studio/yoda-admin-template/react/main/widgets/cards/advance
 
-<br>
-<br>
-
-#### 날씨
-
->
 
 <br>
 <br>
