@@ -1,50 +1,27 @@
 {
-  "name": "app",
-  "version": "0.1.0",
   "private": true,
-  "main": "src/main.js",
-  "homepage": "./",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "antd": "^4.20.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
-  },
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "main": "app/background.js",
   "scripts": {
-    "start": "concurrently \"yarn react-start\" \"yarn electron\"",
-    "react-start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "electron": "wait-on http://localhost:3000 && electron .",
-    "electron-start": "electron ."
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.0.1"
   },
   "devDependencies": {
-    "concurrently": "^7.1.0",
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.20.2",
     "electron": "^18.2.0",
-    "wait-on": "^6.0.1"
+    "electron-builder": "^23.0.3",
+    "next": "^12.1.6",
+    "nextron": "^8.1.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
