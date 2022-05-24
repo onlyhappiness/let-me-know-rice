@@ -9,31 +9,22 @@ import {
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import DashBoardSider from "./dashboard-sidebar";
+import DashboardHeader from "./dashboard-header";
 
 const { Header, Sider, Content } = Layout;
 
 function DashboardLayout() {
   const [collapsed, setCollapsed] = useState(true);
+  const toggle = () => {
+    setCollapsed(!collapsed);
+  };
 
   return (
     <Layout style={{ height: "100vh" }}>
       <DashBoardSider collapsed={collapsed} />
 
       <Layout className="site-layout">
-        <Header
-          className="site-layout-background"
-          style={{
-            padding: 0,
-          }}
-        >
-          {React.createElement(
-            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: () => setCollapsed(!collapsed),
-            }
-          )}
-        </Header>
+        <DashboardHeader collapsed={collapsed} toggle={toggle} />
         <Content
           className="site-layout-background"
           style={{
