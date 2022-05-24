@@ -10,5 +10,6 @@
     // 상단 타이틀바 배경색
     "titleBar.activeBackground": "#99f2c8",
     "titleBar.inactiveBackground": "#99f2c8"
-  }
+  },
+  "editor.fontSize": 16
 }
