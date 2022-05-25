@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-
 import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
+  AppstoreOutlined,
+  BarChartOutlined,
+  CloudOutlined,
+  ShopOutlined,
+  TeamOutlined,
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
@@ -11,27 +13,43 @@ import { Layout, Menu } from "antd";
 import DashBoardSider from "./dashboard-sidebar";
 import DashboardHeader from "./dashboard-header";
 
+const items = [
+  UserOutlined,
+  VideoCameraOutlined,
+  UploadOutlined,
+  BarChartOutlined,
+  CloudOutlined,
+  AppstoreOutlined,
+  TeamOutlined,
+  ShopOutlined,
+].map((icon, index) => ({
+  key: String(index + 1),
+  icon: React.createElement(icon),
+  label: `nav ${index + 1}`,
+}));
+
 const { Header, Sider, Content } = Layout;
 
-function DashboardLayout() {
+function DashboardLayout({ component }) {
   const [collapsed, setCollapsed] = useState(true);
   const toggle = () => {
     setCollapsed(!collapsed);
   };
 
-  return (
-    <Layout style={{ height: "100vh" }}>
-      <DashBoardSider collapsed={collapsed} />
+  console.log(component);
 
+  return (
+    <Layout hasSider>
+      <DashBoardSider collapsed={collapsed} toggle={toggle} />
       <Layout className="site-layout">
         <DashboardHeader collapsed={collapsed} toggle={toggle} />
         <Content
-          className="site-layout-background"
           style={{
-            padding: 24,
+            margin: "24px 16px 0",
+            overflow: "initial",
           }}
         >
-          Content
+          {component}
         </Content>
       </Layout>
     </Layout>

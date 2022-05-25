@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Head from "next/head";
 import DashboardLayout from "../components/dashboard/dashboard-layout";
+import HomeComponent from "../components/home/home-content";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <Head>
         <title>밥 줘</title>
       </Head>
-      <DashboardLayout />
+      <DashboardLayout component={<HomeComponent />} />
     </>
   );
 };
