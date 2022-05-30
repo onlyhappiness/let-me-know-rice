@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>밥 줘</title>
+        <title>Let Me Know Rice</title>
       </Head>
       <DashboardLayout component={<HomeComponent />} />
     </>
