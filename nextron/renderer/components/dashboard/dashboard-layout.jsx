@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   AppstoreOutlined,
   BarChartOutlined,
@@ -8,10 +8,10 @@ import {
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
-} from "@ant-design/icons";
-import { Layout, Menu } from "antd";
-import DashBoardSider from "./dashboard-sidebar";
-import DashboardHeader from "./dashboard-header";
+} from '@ant-design/icons';
+import { Layout, Menu } from 'antd';
+import DashBoardSider from './dashboard-sidebar';
+import DashboardHeader from './dashboard-header';
 
 const items = [
   UserOutlined,
@@ -41,12 +41,12 @@ function DashboardLayout({ component }) {
   return (
     <Layout hasSider>
       <DashBoardSider collapsed={collapsed} toggle={toggle} />
-      <Layout className="site-layout">
+      <Layout className='site-layout'>
         <DashboardHeader collapsed={collapsed} toggle={toggle} />
         <Content
           style={{
-            margin: "24px 16px 0",
-            overflow: "initial",
+            margin: '20px',
+            overflow: 'initial',
           }}
         >
           {component}

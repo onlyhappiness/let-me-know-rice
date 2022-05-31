@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   HomeOutlined,
   LikeOutlined,
   EnvironmentOutlined,
-} from "@ant-design/icons";
-import { Menu, Layout } from "antd";
-import { useRouter } from "next/router";
+} from '@ant-design/icons';
+import { Menu, Layout } from 'antd';
+import { useRouter } from 'next/router';
 // import Sider from "antd/lib/layout/Sider";
 
 const { Sider } = Layout;
@@ -19,14 +19,14 @@ const DashBoardSider = ({ collapsed }) => {
       collapsible
       collapsed={collapsed}
       style={{
-        height: "100vh",
+        height: '100vh',
       }}
     >
-      <div className="logo" />
+      <div className='logo' />
       <Menu
-        theme="dark"
-        mode="inline"
-        defaultSelectedKeys={["1"]}
+        theme='dark'
+        mode='inline'
+        defaultSelectedKeys={['1']}
         // items={[
         //   {
         //     key: "1",
@@ -47,9 +47,9 @@ const DashBoardSider = ({ collapsed }) => {
       >
         {/* Home */}
         <Menu.Item
-          key={"home"}
+          key={'home'}
           onClick={() => {
-            router.push("/");
+            router.push('/home');
           }}
         >
           <HomeOutlined />
@@ -58,9 +58,9 @@ const DashBoardSider = ({ collapsed }) => {
 
         {/* 추천 */}
         <Menu.Item
-          key={"like"}
+          key={'like'}
           onClick={() => {
-            router.push("/like");
+            router.push('/like');
           }}
         >
           <LikeOutlined />
@@ -69,9 +69,9 @@ const DashBoardSider = ({ collapsed }) => {
 
         {/* Map */}
         <Menu.Item
-          key={"map"}
+          key={'map'}
           onClick={() => {
-            router.push("/map");
+            router.push('/map');
           }}
         >
           <EnvironmentOutlined />

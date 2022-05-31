@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import Head from "next/head";
-import DashboardLayout from "../components/dashboard/dashboard-layout";
-import HomeComponent from "../components/home/home-content";
+import Head from 'next/head';
+import DashboardLayout from '../../components/dashboard/dashboard-layout';
+import HomeComponent from '../../components/home/home-content';
 
 const Home = () => {
   return (
