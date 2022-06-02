@@ -1,8 +1,0 @@
-node_modules
-*.log
-.next
-app
-dist
-
-## log
-yarn.lock
