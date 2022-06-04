@@ -6,7 +6,7 @@ const MenuCategory = () => {
     <>
       <Grid container spacing={0}>
         <Grid item xs={3} md={2}>
-          <Card sx={{ maxWidth: 150 }}>
+          <Card>
             <CardMedia
               component='img'
               height='80'
@@ -25,7 +25,7 @@ const MenuCategory = () => {
           </Card>
         </Grid>
         <Grid item xs={3} md={2}>
-          <Card sx={{ maxWidth: 150 }}>
+          <Card>
             <CardMedia
               component='img'
               height='80'
@@ -44,7 +44,7 @@ const MenuCategory = () => {
           </Card>
         </Grid>
         <Grid item xs={3} md={2}>
-          <Card sx={{ maxWidth: 150 }}>
+          <Card>
             <CardMedia
               component='img'
               height='80'
@@ -63,7 +63,7 @@ const MenuCategory = () => {
           </Card>
         </Grid>
         <Grid item xs={3} md={2}>
-          <Card sx={{ maxWidth: 150 }}>
+          <Card>
             <CardMedia
               component='img'
               height='80'

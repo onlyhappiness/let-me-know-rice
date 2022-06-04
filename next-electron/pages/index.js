@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <Grid container spacing={0}>
       <Grid item xs={12} lg={12}>
-        {/* <SalesOverview /> */}
+        {/* 추천하는 곳으로 이동 */}
         <LikeLinkContent />
       </Grid>
       {/* ------------------------- row 1 ------------------------- */}
@@ -19,7 +19,7 @@ export default function Index() {
         <MenuCategory />
       </Grid>
       <Grid item xs={12} lg={12}>
-        <ProductPerfomance />
+        {/* <ProductPerfomance /> */}
       </Grid>
       <Grid item xs={12} lg={12}>
         {/* <BlogCard /> */}
