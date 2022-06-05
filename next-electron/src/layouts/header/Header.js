@@ -4,7 +4,7 @@ import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
 import PropTypes from 'prop-types';
 // Dropdown Component
 import SearchDD from './SearchDD';
-// import ProfileDD from "./ProfileDD";
+import ProfileDD from './ProfileDD';
 
 const Header = ({ sx, customClass, toggleMobileSidebar, position }) => {
   return (
@@ -32,7 +32,7 @@ const Header = ({ sx, customClass, toggleMobileSidebar, position }) => {
 
         <Box flexGrow={1} />
 
-        {/* <ProfileDD /> */}
+        <ProfileDD />
         {/* ------------------------------------------- */}
         {/* Profile Dropdown */}
         {/* ------------------------------------------- */}

@@ -10,11 +10,6 @@ const Menuitems = [
   //   href: '/buttons',
   // },
   // {
-  //   title: 'Forms',
-  //   icon: 'layout',
-  //   href: '/forms',
-  // },
-  // {
   //   title: 'Alerts',
   //   icon: 'info',
   //   href: '/alerts',
@@ -30,11 +25,11 @@ const Menuitems = [
   //   icon: 'user',
   //   href: '/pagination',
   // },
-  // {
-  //   title: 'Tables',
-  //   icon: 'grid',
-  //   href: '/table',
-  // },
+  {
+    title: 'Tables',
+    icon: 'grid',
+    href: '/table',
+  },
 ];
 
 export default Menuitems;
