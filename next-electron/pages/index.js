@@ -18,12 +18,6 @@ export default function Index() {
         {/* <DailyActivity /> */}
         <MenuCategory />
       </Grid>
-      <Grid item xs={12} lg={12}>
-        {/* <ProductPerfomance /> */}
-      </Grid>
-      <Grid item xs={12} lg={12}>
-        {/* <BlogCard /> */}
-      </Grid>
     </Grid>
   );
 }
