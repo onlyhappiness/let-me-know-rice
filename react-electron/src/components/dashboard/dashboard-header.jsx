@@ -1,8 +1,8 @@
-import { Header } from "antd/lib/layout/layout";
-import React from "react";
+import { Header } from 'antd/lib/layout/layout';
+import React from 'react';
 
-import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
-import { AutoComplete, Input } from "antd";
+import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
+import { AutoComplete, Input } from 'antd';
 
 function DashboardHeader({ collapsed, toggle }) {
   return (
@@ -18,11 +18,11 @@ function DashboardHeader({ collapsed, toggle }) {
       }
     >
       {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-        className: "trigger",
+        className: 'trigger',
         onClick: toggle,
       })}
-      <AutoComplete style={{ marginLeft: "36px" }}>
-        <Input.Search placeholder="Search here" enterButton />
+      <AutoComplete style={{ marginLeft: '36px' }}>
+        <Input.Search placeholder='Search here' enterButton />
       </AutoComplete>
     </Header>
   );

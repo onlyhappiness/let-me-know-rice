@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import FeatherIcon from "feather-icons-react";
-import { IconButton, Input, Box, Drawer } from "@mui/material";
+import React, { useState } from 'react';
+import FeatherIcon from 'feather-icons-react';
+import { IconButton, Input, Box, Drawer } from '@mui/material';
 
 const SearchDD = () => {
   // drawer top
@@ -12,43 +12,45 @@ const SearchDD = () => {
   return (
     <>
       <IconButton
-        aria-label="show 4 new mails"
-        color="inherit"
-        aria-controls="search-menu"
-        aria-haspopup="true"
+        aria-label='show 4 new mails'
+        color='inherit'
+        aria-controls='search-menu'
+        aria-haspopup='true'
         onClick={() => setShowDrawer2(true)}
-        size="large"
+        size='large'
       >
-        <FeatherIcon icon="search" width="20" height="20" />
+        <FeatherIcon icon='search' width='20' height='20' />
       </IconButton>
       <Drawer
-        anchor="top"
+        anchor='top'
         open={showDrawer2}
         onClose={() => setShowDrawer2(false)}
         sx={{
-          "& .MuiDrawer-paper": {
-            padding: "15px 30px",
+          '& .MuiDrawer-paper': {
+            padding: '15px 30px',
           },
         }}
       >
-        <Box display="flex" alignItems="center">
-          <Input placeholder="Search here" aria-label="description" fullWidth />
+        <Box display='flex' alignItems='center'>
+          <Input placeholder='Search here' aria-label='description' fullWidth />
           <Box
             sx={{
-              ml: "auto",
+              ml: 'auto',
             }}
           >
             <IconButton
-              color="inherit"
+              color='inherit'
               sx={{
                 color: (theme) => theme.palette.grey.A200,
               }}
               onClick={handleDrawerClose2}
             >
-              <FeatherIcon icon="x-circle" />
+              <FeatherIcon icon='x-circle' />
             </IconButton>
           </Box>
         </Box>
+
+        <Box mt={2}>검색 문구를 여기에 넣넣</Box>
       </Drawer>
     </>
   );

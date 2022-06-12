@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardMedia, Grid } from '@mui/material';
 import React from 'react';
 
-import { foodCategory } from '../../../data/foodCategory';
+import { foodCategory } from '../../data/foodCategory';
 
 const MenuCategory = () => {
   return (
@@ -14,9 +14,13 @@ const MenuCategory = () => {
                 <CardHeader title={data.category} />
                 <CardMedia
                   component='img'
-                  height='300'
+                  height='250'
                   image={data.img}
                   alt={data.img}
+                  sx={{
+                    pl: '55px',
+                    pt: '20px',
+                  }}
                 />
               </Card>
             </Grid>
