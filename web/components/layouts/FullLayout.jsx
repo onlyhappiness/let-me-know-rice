@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Container, Box } from "@mui/material";
 import styled from "@emotion/styled";
+import Sider from "./sidebar/Sider";
 
 const MainWrapper = styled.div`
   display: flex;
@@ -19,12 +20,19 @@ const PageWrapper = styled.div`
 `;
 
 const FullLayout = ({ children }) => {
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
+
   return (
     <>
       <MainWrapper>
+        <Sider />
         <PageWrapper>
           <Container sx={{ paddingTop: "20px" }}>
-            <Box sx={{ minHeight: "calc(100vh - 170px)" }}>{children}</Box>
+            <Box
+            //  sx={{ minHeight: "calc(100vh - 170px)" }}
+            >
+              {children}
+            </Box>
           </Container>
         </PageWrapper>
       </MainWrapper>

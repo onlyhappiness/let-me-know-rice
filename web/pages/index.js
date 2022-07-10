@@ -9,7 +9,9 @@ export default function Home() {
         <title>Let Me Know Rice</title>
       </Head>
 
-      <></>
+      <>
+        <div>Home</div>
+      </>
     </>
   );
 }
