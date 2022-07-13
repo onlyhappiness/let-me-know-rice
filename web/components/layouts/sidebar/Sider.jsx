@@ -1,30 +1,53 @@
 import React from "react";
 
-import { Box, List, ListItemText } from "@mui/material";
+import {
+  Box,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  useMediaQuery,
+} from "@mui/material";
 import Menuitems from "./MenuItems";
 
-const Sider = () => {
+const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
+  // 사이즈
+  const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
+
+  if (lgUp) {
+    return (
+      <Drawer
+        anchor="left"
+        open={isSidebarOpen}
+        variant="persistent"
+        PaperProps={{
+          sx: {
+            width: "265px",
+            border: "0 !important",
+          },
+        }}
+      >
+        {/* {SidebarContent} */}
+        사이드바 나와
+      </Drawer>
+    );
+  }
   return (
-    <Box
-      p={2}
-      height="100%"
-      sx={{
-        border: "1px solid black",
-        display: { xs: "none", sm: "block" },
+    <Drawer
+      anchor="left"
+      open={isMobileSidebarOpen}
+      onClose={onSidebarClose}
+      PaperProps={{
+        sx: {
+          width: "265px",
+          border: "0 !important",
+        },
       }}
+      variant="temporary"
     >
-      <Box mt={2}>
-        <List>
-          {Menuitems.map((item, index) => {
-            return (
-              <List component="li" key={item.title}>
-                <ListItemText>{item.title}</ListItemText>
-              </List>
-            );
-          })}
-        </List>
-      </Box>
-    </Box>
+      {/* {SidebarContent} */}
+      사이드바 나와
+    </Drawer>
   );
 };
 

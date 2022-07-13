@@ -1,38 +1,66 @@
 import React, { useState } from "react";
 
-import { Container, Box } from "@mui/material";
-import styled from "@emotion/styled";
+import {
+  Container,
+  Box,
+  useMediaQuery,
+  experimentalStyled,
+} from "@mui/material";
 import Sider from "./sidebar/Sider";
+import Header from "./Header/header";
 
-const MainWrapper = styled.div`
-  display: flex;
-  min-height: 100vh;
-  overflow: hidden;
-  width: 100%;
-`;
+const MainWrapper = experimentalStyled("div")(() => ({
+  display: "flex",
+  minHeight: "100vh",
+  overflow: "hidden",
+  width: "100%",
+}));
 
-const PageWrapper = styled.div`
-  display: flex;
-  overflow: hidden;
-  margin-top: 64px;
-  width: 100%;
-  padding: 20px 10px;
-`;
+const PageWrapper = experimentalStyled("div")(({ theme }) => ({
+  display: "flex",
+  flex: "1 1 auto",
+  overflow: "hidden",
+
+  backgroundColor: theme.palette.background.default,
+  [theme.breakpoints.up("lg")]: {
+    paddingTop: "64px",
+  },
+  [theme.breakpoints.down("lg")]: {
+    paddingTop: "64px",
+  },
+}));
 
 const FullLayout = ({ children }) => {
+  // 페이지 size
+  const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
+
   const [isSidebarOpen, setSidebarOpen] = useState(true);
+  const [isMobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
     <>
       <MainWrapper>
-        <Sider />
+        <Header
+          sx={{
+            paddingLeft: isSidebarOpen && lgUp ? "265px" : "",
+            backgroundColor: "#fbfbfb",
+          }}
+          toggleMobileSidebar={() => setMobileSidebarOpen(true)}
+        />
+        <Sider
+          isSidebarOpen={isSidebarOpen}
+          isMobileSidebarOpen={isMobileSidebarOpen}
+          onSidebarClose={() => setMobileSidebarOpen(false)}
+        />
         <PageWrapper>
-          <Container sx={{ paddingTop: "20px" }}>
-            <Box
-            //  sx={{ minHeight: "calc(100vh - 170px)" }}
-            >
-              {children}
-            </Box>
+          <Container
+            maxWidth={false}
+            sx={{
+              paddingTop: "20px",
+              paddingLeft: isSidebarOpen && lgUp ? "280px!important" : "",
+            }}
+          >
+            <Box sx={{ minHeight: "calc(100vh - 170px)" }}>{children}</Box>
           </Container>
         </PageWrapper>
       </MainWrapper>
