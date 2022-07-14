@@ -7,6 +7,7 @@ import typography from "./Typoraphy";
 const theme = createTheme({
   palette: {
     primary: {
+      // FIXME: COLOR
       main: "#03c9d7",
       light: "#e5fafb",
       dark: "#05b2bd",
@@ -20,7 +21,6 @@ const theme = createTheme({
     },
     success: {
       main: "#00c292",
-
       dark: "#00964b",
       contrastText: "#ffffff",
     },

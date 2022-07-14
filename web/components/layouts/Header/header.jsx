@@ -31,12 +31,26 @@
 
 import React from "react";
 import { AppBar, Box, IconButton, Toolbar } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
-const Header = ({ sx }) => {
+const Header = ({ sx, toggleMobileSidebar }) => {
   return (
     <AppBar sx={sx}>
       <Toolbar>
-        나와
+        <IconButton
+          size="large"
+          color="inherit"
+          aria-label="menu"
+          onClick={toggleMobileSidebar}
+          sx={{
+            display: {
+              lg: "none",
+              xs: "flex",
+            },
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
         <Box flexGrow={1} />
       </Toolbar>
     </AppBar>

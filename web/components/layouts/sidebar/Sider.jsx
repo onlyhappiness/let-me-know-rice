@@ -9,6 +9,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Menuitems from "./MenuItems";
+import SidebarContent from "./SidebarContent";
 
 const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
   // 사이즈
@@ -24,11 +25,13 @@ const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
           sx: {
             width: "265px",
             border: "0 !important",
+            // p: 2,
           },
         }}
       >
-        {/* {SidebarContent} */}
-        사이드바 나와
+        {/* <Box sx={{ p: 2 }}>사이드바 나와</Box> */}
+
+        <SidebarContent onSidebarClose={onSidebarClose} />
       </Drawer>
     );
   }
@@ -41,12 +44,13 @@ const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
         sx: {
           width: "265px",
           border: "0 !important",
+          // p: 2,
         },
       }}
       variant="temporary"
     >
-      {/* {SidebarContent} */}
-      사이드바 나와
+      {/* <Box sx={{ p: 2 }}>사이드바 나와</Box> */}
+      <SidebarContent onSidebarClose={onSidebarClose} />
     </Drawer>
   );
 };
