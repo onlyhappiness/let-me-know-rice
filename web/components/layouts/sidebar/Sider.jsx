@@ -23,7 +23,7 @@ const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
         variant="persistent"
         PaperProps={{
           sx: {
-            width: "265px",
+            width: "220px",
             border: "0 !important",
             backgroundColor: "#F0F2F2",
             // p: 2,
@@ -43,7 +43,7 @@ const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
       onClose={onSidebarClose}
       PaperProps={{
         sx: {
-          width: "265px",
+          width: "220px",
           border: "0 !important",
           backgroundColor: "#F0F2F2",
           // p: 2,

@@ -15,16 +15,16 @@ export default function Home() {
       </Head>
 
       <>
-        <Grid container spacing={1}>
+        <Grid container>
           <Grid item xs={12} lg={12}>
             {/* TODO: 내 위치 */}
             <LocationOverview />
           </Grid>
-          <Grid item xs={12} lg={8}>
+          <Grid item xs={12} lg={7}>
             {/* TODO: 음식점 리스트 */}
             <ShopListOverview />
           </Grid>
-          <Grid item xs={12} lg={4}>
+          <Grid item xs={12} lg={5}>
             {/* TODO: 추천 음식점 */}
             <RecommendOverview />
           </Grid>
