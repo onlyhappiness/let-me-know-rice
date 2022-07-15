@@ -42,7 +42,7 @@ const FullLayout = ({ children }) => {
       <MainWrapper>
         <Header
           sx={{
-            paddingLeft: isSidebarOpen && lgUp ? "265px" : "",
+            paddingLeft: isSidebarOpen && lgUp ? "220px" : "",
             // backgroundColor: "#fbfbfb",
             backgroundColor: "#ffffff",
           }}
@@ -58,7 +58,7 @@ const FullLayout = ({ children }) => {
             maxWidth={false}
             sx={{
               paddingTop: "20px",
-              paddingLeft: isSidebarOpen && lgUp ? "280px!important" : "",
+              paddingLeft: isSidebarOpen && lgUp ? "235px!important" : "",
             }}
           >
             <Box sx={{ minHeight: "calc(100vh - 170px)" }}>{children}</Box>
