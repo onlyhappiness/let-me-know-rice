@@ -52,6 +52,8 @@ const Header = ({ sx, toggleMobileSidebar }) => {
           <MenuIcon />
         </IconButton>
         <Box flexGrow={1} />
+        {/* <div>검색바?</div> */}
+        <div>회원가입 및 로그인</div>
       </Toolbar>
     </AppBar>
   );

@@ -25,6 +25,7 @@ const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
           sx: {
             width: "265px",
             border: "0 !important",
+            backgroundColor: "#F0F2F2",
             // p: 2,
           },
         }}
@@ -44,6 +45,7 @@ const Sider = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
         sx: {
           width: "265px",
           border: "0 !important",
+          backgroundColor: "#F0F2F2",
           // p: 2,
         },
       }}

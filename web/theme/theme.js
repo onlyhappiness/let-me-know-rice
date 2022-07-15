@@ -6,17 +6,29 @@ import typography from "./Typoraphy";
 // Create a theme instance.
 const theme = createTheme({
   palette: {
+    // FIXME: COLOR
+    // primary: {
+    //   main: "#03c9d7",
+    //   light: "#e5fafb",
+    //   dark: "#05b2bd",
+    //   contrastText: "#ffffff",
+    // },
+    // secondary: {
+    //   main: "#fb9678",
+    //   light: "#fcf1ed",
+    //   dark: "#e67e5f",
+    //   contrastText: "#ffffff",
+    // },
     primary: {
-      // FIXME: COLOR
-      main: "#03c9d7",
-      light: "#e5fafb",
-      dark: "#05b2bd",
+      main: "#AEB9F2",
+      // light: "#e5fafb",
+      // dark: "#05b2bd",
       contrastText: "#ffffff",
     },
     secondary: {
-      main: "#fb9678",
-      light: "#fcf1ed",
-      dark: "#e67e5f",
+      main: "#A7BDD9",
+      // light: "#fcf1ed",
+      // dark: "#e67e5f",
       contrastText: "#ffffff",
     },
     success: {

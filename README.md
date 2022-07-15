@@ -19,16 +19,6 @@
 
 ---
 
-#### ant-design
-
-> https://ant.design/components/overview/
-
-<br>
-
-#### ant-design-icon
-
-> https://ant.design/components/icon/
-
 <br>
 <br>
 
