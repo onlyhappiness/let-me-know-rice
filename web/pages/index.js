@@ -1,13 +1,24 @@
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 import { Grid } from "@mui/material";
 import LocationOverview from "../components/home/LocationOverview";
 import ShopListOverview from "../components/home/ShopListOverview";
 import RecommendOverview from "../components/home/RecommendOverview";
 
+import { loadShopLists } from "../actions/shop";
+
 export default function Home() {
+  const dispatch = useDispatch();
+  const { shopLists } = useSelector((state) => state.shop);
+
+  useEffect(() => {
+    dispatch(loadShopLists());
+  }, []);
+
+  console.log("상점 리스트들===============", shopLists);
+
   return (
     <>
       <Head>

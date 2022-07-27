@@ -2,8 +2,8 @@ import Head from "next/head";
 import { ThemeProvider } from "@mui/material";
 import FullLayout from "../components/layouts/FullLayout";
 import theme from "../theme/theme";
-// import "../styles/globals.css";
-import Script from "next/script";
+
+import wrapper from "../store/configureStore";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,10 +12,6 @@ function MyApp({ Component, pageProps }) {
         <title>밥 줘</title>
       </Head>
       <>
-        {/* <Script
-    			strategy="beforeInterative"
-    			src={`https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_MAP_KEY}`}
-    		></Script> */}
         <ThemeProvider theme={theme}>
           <FullLayout>
             <Component {...pageProps} />
@@ -26,4 +22,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
