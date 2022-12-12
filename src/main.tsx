@@ -5,11 +5,15 @@ import "./index.css";
 
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import { ThemeProvider } from "@mui/material";
+import theme from "./theme/theme";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
     {/* <React.StrictMode> */}
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
     {/* </React.StrictMode> */}
   </Provider>
 );

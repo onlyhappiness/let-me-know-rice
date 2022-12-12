@@ -2,15 +2,8 @@
 import { useTheme } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-export const useResponsive = ({
-  query,
-  start,
-  end,
-}: {
-  query?: any;
-  start?: any;
-  end?: any;
-}) => {
+// FIXME: 타입 재지정
+export const useResponsive = (query?: any, start?: any, end?: any) => {
   const theme = useTheme();
 
   const mediaUp = useMediaQuery(theme.breakpoints.up(start));
