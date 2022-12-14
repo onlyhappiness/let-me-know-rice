@@ -1,7 +1,7 @@
 import { AppBar, styled, Toolbar } from "@mui/material";
 import React from "react";
 
-const NAV_WIDTH = 280;
+const SIDEBAR_WIDTH = 260;
 
 const HEADER_MOBILE = 64;
 
@@ -13,7 +13,7 @@ const HeaderAppBar = styled(AppBar)(({ theme }) => ({
 
   boxShadow: "none",
   [theme.breakpoints.up("lg")]: {
-    width: `calc(100% - ${NAV_WIDTH + 1}px)`,
+    width: `calc(100% - ${SIDEBAR_WIDTH + 1}px)`,
   },
 }));
 

@@ -11,14 +11,13 @@ const LayoutContainer = styled("div")({
   display: "flex",
   minHeight: "100%",
   overflow: "hidden",
-  backgroundColor: "gray",
   // backgroundColor: theme.palette.secondary.main,
 });
 
 const LayoutWrap = styled("div")(({ theme }) => ({
   flexGrow: 1,
   overflow: "auto",
-  // minHeight: "100%",
+  minHeight: "100%",
   paddingTop: APP_BAR_MOBILE + 24,
   paddingBottom: theme.spacing(10),
   [theme.breakpoints.up("lg")]: {
@@ -32,7 +31,11 @@ export default ({ children }: any) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <LayoutContainer>
+    <LayoutContainer
+      style={{
+        backgroundColor: "gray",
+      }}
+    >
       <Header isSidebarOpen={() => setOpen(true)} />
 
       <Sidebar isSidebarOpen={open} onCloseSidebar={() => setOpen(false)} />
