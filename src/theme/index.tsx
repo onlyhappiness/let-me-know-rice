@@ -2,23 +2,26 @@ import { useMemo } from "react";
 
 import { CssBaseline } from "@mui/material";
 import {
-  ThemeProvider,
+  ThemeProvider as MUIThemeProvider,
   createTheme,
   StyledEngineProvider,
 } from "@mui/material/styles";
 
-export default ({ children }: { children: any }) => {
-  const themeOptions = useMemo(() => ({}), []);
+import palette from "./palette";
+import GlobalStyles from "./globalStyles";
+
+export default function ThemeProvider({ children }: { children: any }) {
+  const themeOptions = useMemo(() => ({ palette }), []);
 
   const theme = createTheme(themeOptions);
 
   return (
     <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
+      <MUIThemeProvider theme={theme}>
         <CssBaseline />
-
+        <GlobalStyles />
         {children}
-      </ThemeProvider>
+      </MUIThemeProvider>
     </StyledEngineProvider>
   );
-};
+}
