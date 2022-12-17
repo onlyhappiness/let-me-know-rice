@@ -31,11 +31,7 @@ export default ({ children }: any) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <LayoutContainer
-      style={{
-        backgroundColor: "gray",
-      }}
-    >
+    <LayoutContainer>
       <Header isSidebarOpen={() => setOpen(true)} />
 
       <Sidebar isSidebarOpen={open} onCloseSidebar={() => setOpen(false)} />

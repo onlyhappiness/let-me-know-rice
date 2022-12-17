@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import SidebarContents from "../components/SidebarContents";
 import { useResponsive } from "../hooks/useResponsive";
 
-const SIDEBAR_WIDTH = 260;
+const SIDEBAR_WIDTH = 240;
 
 interface ISidebar {
   isSidebarOpen: boolean;

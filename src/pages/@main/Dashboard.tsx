@@ -30,13 +30,9 @@ export default () => {
 
         <Box mt={3}>footer?</Box>
       </Container> */}
-      <div
-        style={{
-          paddingTop: "80px",
-        }}
-      >
-        오늘의 메뉴
-      </div>
+      <div>검색창</div>
+      <div>배너</div>
+      <div>오늘의 메뉴</div>
     </DefaultLayout>
   );
 };

@@ -30,9 +30,11 @@ export default () => {
                 sx={{
                   mb: 1,
                   ...(pathname === href && {
-                    color: "white",
+                    // color: "white",
+                    color: "#E9EBEE",
+                    fontWeight: "800",
                     backgroundColor: (theme) =>
-                      `${theme.palette.primary.main}!important`,
+                      `${theme.palette.background} !important`,
                     // backgroundColor: `gray !important`,
                   }),
                   borderRadius: 3,

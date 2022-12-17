@@ -1,12 +1,12 @@
 import React from "react";
+import ThemeProvider from "../theme";
 import Routes from "./Routes";
-import ScrollToTop from "../utils/ScrollToTop";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Routes />
-    </>
+    </ThemeProvider>
   );
 }
 

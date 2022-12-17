@@ -11,6 +11,8 @@ const SECONDARY = {
 
 const palette = {
   primary: PRIMARY,
+  // background: "#E9EBEE",
+  background: "#B1B3B6",
 };
 
 export default palette;

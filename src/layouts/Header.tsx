@@ -1,16 +1,18 @@
-import { AppBar, styled, Toolbar } from "@mui/material";
+import { AppBar, Box, Stack, styled, Toolbar } from "@mui/material";
 import React from "react";
 
-const SIDEBAR_WIDTH = 260;
+import { AiOutlineBars } from "react-icons/ai";
+import Account from "../components/header/Account";
+
+const SIDEBAR_WIDTH = 240;
 
 const HEADER_MOBILE = 64;
 
-const HEADER_DESKTOP = 92;
+const HEADER_DESKTOP = 70;
 
 const HeaderAppBar = styled(AppBar)(({ theme }) => ({
-  backgroundColor: "gray",
   color: "white",
-
+  background: "white",
   boxShadow: "none",
   [theme.breakpoints.up("lg")]: {
     width: `calc(100% - ${SIDEBAR_WIDTH + 1}px)`,
@@ -29,14 +31,20 @@ export default ({ isSidebarOpen }: { isSidebarOpen: () => void }) => {
   return (
     <HeaderAppBar>
       <HeaderToolbar>
-        <div
-          onClick={isSidebarOpen}
-          style={{
-            cursor: "pointer",
+        <AiOutlineBars size={26} color="black" onClick={isSidebarOpen} />
+
+        <Box sx={{ flexGrow: 1 }} />
+
+        <Stack
+          direction="row"
+          alignItems="center"
+          spacing={{
+            xs: 0.5,
+            sm: 1,
           }}
         >
-          사이드바
-        </div>
+          <Account />
+        </Stack>
       </HeaderToolbar>
     </HeaderAppBar>
   );
