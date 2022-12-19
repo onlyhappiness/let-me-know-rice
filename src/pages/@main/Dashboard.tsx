@@ -33,6 +33,51 @@ export default () => {
       <div>검색창</div>
       <div>배너</div>
       <div>오늘의 메뉴</div>
+
+      <Box mt={3} sx={{ backgroundColor: "gray", width: "100%" }}>
+        <Grid container>
+          <Grid item xs={4}>
+            a
+          </Grid>
+          <Grid item xs={4}>
+            b
+          </Grid>
+          <Grid item xs={4}>
+            c
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box>
+        <Grid container>
+          <Grid item xs={6}>
+            d
+          </Grid>
+          <Grid item xs={6}>
+            e
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box>
+        <Grid container>
+          <Grid item xs={12}>
+            f
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box>
+        <Grid container>
+          <Grid item xs={6}>
+            g
+          </Grid>
+
+          <Grid item xs={6}>
+            h
+          </Grid>
+        </Grid>
+      </Box>
     </DefaultLayout>
   );
 };
