@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import theme from "../theme/theme";
+import { Outlet } from "react-router-dom";
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 92;
@@ -27,7 +28,7 @@ const LayoutWrap = styled("div")(({ theme }) => ({
   },
 }));
 
-export default ({ children }: any) => {
+export default () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
@@ -36,7 +37,9 @@ export default ({ children }: any) => {
 
       <Sidebar isSidebarOpen={open} onCloseSidebar={() => setOpen(false)} />
 
-      <LayoutWrap>{children}</LayoutWrap>
+      <LayoutWrap>
+        <Outlet />
+      </LayoutWrap>
     </LayoutContainer>
   );
 };

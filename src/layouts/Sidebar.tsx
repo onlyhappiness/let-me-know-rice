@@ -3,13 +3,9 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import SidebarContents from "../components/SidebarContents";
 import { useResponsive } from "../hooks/useResponsive";
+import { ISidebar } from "../@types/sidebar";
 
 const SIDEBAR_WIDTH = 240;
-
-interface ISidebar {
-  isSidebarOpen: boolean;
-  onCloseSidebar: () => void;
-}
 
 export default ({ isSidebarOpen, onCloseSidebar }: ISidebar) => {
   const { pathname } = useLocation();
