@@ -1,12 +1,6 @@
 import React from "react";
-import { styled } from "@mui/material/styles";
+import api, { getApiHost } from "../../api";
 
-const Container = styled("div")(({ theme }) => ({
-  [theme.breakpoints.up("md")]: {
-    display: "flex",
-  },
-}));
-
-export default () => {
+export default function Login() {
   return <div>Login</div>;
-};
+}
