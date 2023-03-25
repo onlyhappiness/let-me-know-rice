@@ -10,7 +10,7 @@ export const useRegisterMutation = () => {
       console.log("res: ", res);
     },
     onError(err) {
-      console.log("err");
+      console.log("err: ", err);
     },
   });
 };

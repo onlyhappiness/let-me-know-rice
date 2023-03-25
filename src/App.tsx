@@ -1,25 +1,34 @@
 import React from "react";
-import { Provider } from "react-redux";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./pages/auth/Login";
-import { store } from "./data";
-import Dashboard from "./pages/Dashboard";
 
-const queryClient = new QueryClient();
+import Login from "./pages/auth/Login";
+
+import MainLayout from "./layout/MainLayout";
+
+import Home from "./pages/Home";
+import Review from "./pages/review/Index";
+import Favorite from "./pages/favorite/Index";
+import Community from "./pages/community/Index";
+import MyInfo from "./pages/my-info/Index";
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Provider store={store}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/home" element={<Dashboard />} />
-          </Routes>
-        </BrowserRouter>
-      </Provider>
-    </QueryClientProvider>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/favorite" element={<Favorite />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/my-info" element={<MyInfo />} />
+
+            {/* <Route path="/home" element={<Home />} /> */}
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
