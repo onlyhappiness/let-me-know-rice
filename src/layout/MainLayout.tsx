@@ -9,12 +9,12 @@ const { Content } = Layout;
 export default function MainLayout() {
   return (
     <>
-      <Layout style={{ minHeight: "100vh" }}>
+      <Layout style={{ minHeight: "100vh", minWidth: "1000px" }}>
         {/* <Sidebar /> */}
         <Layout
           style={{
             // marginLeft: 240,
-            background: "#f6f6f6",
+            background: "##F1F3F7",
             height: "100%",
           }}
         >

@@ -1,5 +1,5 @@
 import { Card, Typography } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useGetAllStore } from "../../hooks/store";
 
@@ -11,15 +11,17 @@ export default function StoreOverview() {
 
   console.log("data: ", data);
 
+  // const screenWidth = window.screen.width;
+
   return (
     <div>
       <Title level={4} style={{ marginBottom: 20 }}>
         추천 가게
       </Title>
 
-      <Swiper style={{ marginBottom: 40 }} spaceBetween={30} slidesPerView={4}>
+      <Swiper style={{ marginBottom: 40 }} spaceBetween={30} slidesPerView={3}>
         {data?.map((item: any) => (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide style={{ marginRight: 30 }} key={item.id}>
             <Card
               hoverable
               style={{ width: 300 }}
