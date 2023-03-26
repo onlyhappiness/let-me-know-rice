@@ -21,7 +21,7 @@ export const useLoginMutation = () => {
 
   return useMutation(login, {
     onSuccess(res) {
-      // console.log("res: ", res.data.data);
+      console.log("res: ", res.data.data);
       sessionStorage.setItem("token", res.data.data.access_token);
       navigate("/home");
     },

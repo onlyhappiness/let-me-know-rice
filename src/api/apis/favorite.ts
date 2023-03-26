@@ -14,20 +14,20 @@ export const getFavorite = (id: string) => {
   return res;
 };
 
-export const addFavorite = (req: IFavorite) => {
-  const res = api.post(`/favorite`);
+export const addFavorite = async (req: IFavorite) => {
+  const res = await api.post(`/favorite`, req);
 
   return res;
 };
 
-export const updateFavorite = (id: string) => {
-  const res = api.put(`/favorite/${id}`);
+export const updateFavorite = async (id: string) => {
+  const res = await api.put(`/favorite/${id}`);
 
   return res;
 };
 
-export const deleteFavorite = (id: string) => {
-  const res = api.delete(`/favorite/${id}`);
+export const deleteFavorite = async (id: string) => {
+  const res = await api.delete(`/favorite/${id}`);
 
   return res;
 };

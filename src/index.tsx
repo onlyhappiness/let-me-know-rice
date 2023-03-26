@@ -3,12 +3,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import App from "./App";
-import { store } from "./data";
-import "./index.css";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+import { store } from "./data";
+
+import "./index.css";
+import "swiper/css";
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
 const queryClient = new QueryClient();
 
