@@ -1,24 +1,12 @@
 import React from "react";
 import { Button, Card, List, Typography } from "antd";
+import { useNotice } from "../../hooks/notice.query";
 
 const { Title } = Typography;
 
-const data = [
-  {
-    title: "Ant Design Title 1",
-  },
-  {
-    title: "Ant Design Title 2",
-  },
-  {
-    title: "Ant Design Title 3",
-  },
-  {
-    title: "Ant Design Title 4",
-  },
-];
-
 export default function NoticeOverview() {
+  const { data } = useNotice();
+
   return (
     <Card style={{ padding: "15px 40px", borderRadius: 30 }}>
       <Title
@@ -34,14 +22,16 @@ export default function NoticeOverview() {
       <List
         itemLayout="horizontal"
         dataSource={data}
-        renderItem={(item, index) => (
-          <List.Item>
-            <List.Item.Meta
-              title={<div style={{ fontSize: "16px" }}>{item.title}</div>}
-              description="2023.03.26"
-            />
-          </List.Item>
-        )}
+        renderItem={(item: any) => {
+          return (
+            <List.Item>
+              <List.Item.Meta
+                title={<div style={{ fontSize: "16px" }}>{item?.title}</div>}
+                description="2023.03.26"
+              />
+            </List.Item>
+          );
+        }}
       />
       <Button
         type="primary"

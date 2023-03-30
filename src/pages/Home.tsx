@@ -9,9 +9,11 @@ export default function Home() {
     <div>
       <StoreOverview />
 
-      {/* <ReviewOverview /> */}
+      <ReviewOverview />
 
-      <NoticeOverview />
+      <div style={{ padding: 10 }}>
+        <NoticeOverview />
+      </div>
     </div>
   );
 }

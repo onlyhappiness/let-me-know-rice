@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import { Button, Col, Form, Input, Layout, Row } from "antd";
 import { Link } from "react-router-dom";
 
-import { useLoginMutation } from "../../hooks/auth";
+import { useLoginMutation } from "../../hooks/auth.query";
 
 const { Content } = Layout;
 
@@ -14,13 +14,7 @@ export default function Login() {
 
   const loginMutation = useLoginMutation();
 
-  const onSubmit = async ({
-    signname,
-    password,
-  }: {
-    signname: string;
-    password: string;
-  }) => {
+  const onSubmit = async ({ signname, password }: { signname: string; password: string }) => {
     const body = {
       signname,
       password,
@@ -103,11 +97,7 @@ export default function Login() {
                 <Input type="password" placeholder="비밀번호를 입력해주세요." />
               </Form.Item>
 
-              <Button
-                type="primary"
-                style={{ width: "100%" }}
-                onClick={() => form.submit()}
-              >
+              <Button type="primary" style={{ width: "100%" }} onClick={() => form.submit()}>
                 로그인
               </Button>
 
