@@ -5,7 +5,7 @@ import { IReview } from "../../@types/review";
 export const getReview = async () => {
   const res = await api.get(`/review`);
 
-  return res;
+  return res?.data?.data;
 };
 
 // 리뷰 생성

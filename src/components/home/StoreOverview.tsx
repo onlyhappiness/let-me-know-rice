@@ -32,11 +32,11 @@ export default function StoreOverview() {
           <SwiperSlide style={{ marginRight: 30 }} key={item.id}>
             <Card
               hoverable
-              style={{ width: 300 }}
+              style={{ width: 250 }}
               cover={
                 <img
                   style={{
-                    height: 200,
+                    height: 180,
                   }}
                   alt="example"
                   src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
