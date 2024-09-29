@@ -5,37 +5,38 @@ import {
   ProfilePage,
   SearchPage,
 } from "@/pages";
+import MainLayout from "@/widgets/layout/ui/main-layout";
 
-import { MainLayout } from "@/widgets";
-
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouteObject } from "react-router-dom";
+import { ROUTES } from "../lib/constant";
 
 export function appRouter() {
-  return createBrowserRouter([
+  const routers: RouteObject[] = [
     {
       element: <MainLayout />,
       children: [
         {
-          path: "/community",
+          path: ROUTES.COMMUNITY,
           element: <CommunityPage />,
         },
         {
-          path: "/search",
+          path: ROUTES.SEARCH,
           element: <SearchPage />,
         },
         {
-          path: "/",
+          path: ROUTES.HOME,
           element: <HomePage />,
         },
         {
-          path: "/favorite",
+          path: ROUTES.FAVORITE,
           element: <FavoritePage />,
         },
         {
-          path: "/profile",
+          path: ROUTES.PROFILE,
           element: <ProfilePage />,
         },
       ],
     },
-  ]);
+  ];
+  return createBrowserRouter(routers);
 }

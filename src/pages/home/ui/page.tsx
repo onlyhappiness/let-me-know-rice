@@ -1,5 +1,15 @@
+import { Input } from "@/shared/ui/input";
+
 const HomePage = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <header>
+        <Input placeholder="Search" />
+      </header>
+
+      <main></main>
+    </div>
+  );
 };
 
 export default HomePage;

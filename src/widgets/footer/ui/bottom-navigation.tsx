@@ -1,4 +1,5 @@
-import { cn } from "@/shared";
+import { ROUTES } from "@/app/lib/constant";
+import { cn } from "@/shared/lib";
 import {
   HeartIcon,
   HouseIcon,
@@ -11,31 +12,31 @@ import { NavLink } from "react-router-dom";
 
 const navItems = [
   {
-    to: "/message",
+    to: ROUTES.COMMUNITY,
     label: "커뮤니티",
     icon: <MessageCircleIcon />,
     // icon: <Icon name="MessageCircle"  />,
   },
   {
-    to: "/search",
+    to: ROUTES.SEARCH,
     label: "검색",
     icon: <SearchIcon />,
     //  icon: <Icon name="Search" />
   },
   {
-    to: "/",
+    to: ROUTES.HOME,
     label: "홈",
     icon: <HouseIcon />,
     // icon: <Icon name="House" />
   },
   {
-    to: "/favorite",
+    to: ROUTES.FAVORITE,
     label: "즐겨찾기",
     icon: <HeartIcon />,
     // icon: <Icon name="Heart" />
   },
   {
-    to: "/profile",
+    to: ROUTES.PROFILE,
     label: "프로필",
     icon: <UserRoundIcon />,
     // icon: <Icon name="UserRound" />
@@ -53,7 +54,7 @@ const BottomNavigation: React.FC = () => {
             className={({ isActive }) =>
               cn(
                 "flex flex-col items-center gap-1.5",
-                isActive ? "text-blue-500" : "text-gray-500"
+                isActive ? `text-[#FFA500]` : "text-gray-500"
               )
             }
           >
