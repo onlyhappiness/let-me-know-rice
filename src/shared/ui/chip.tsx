@@ -11,7 +11,10 @@ interface ChipProps extends VariantProps<typeof buttonVariants> {
 const Chip = ({ label, className }: ChipProps) => {
   return (
     <button
-      className={cn("border rounded-md px-2.5 h-9 min-w-[60px]", className)}
+      className={cn(
+        "border rounded-md px-2.5 h-9 min-w-[60px] flex items-center justify-center",
+        className
+      )}
     >
       <Text variant="body" className="text-[13px] font-normal">
         {label}

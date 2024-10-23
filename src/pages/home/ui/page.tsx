@@ -1,5 +1,7 @@
 import Banner from "@/entities/home/ui/banner";
 import OptionFilter from "@/entities/home/ui/option-filter";
+import GoogleLoginButton from "@/features/auth/ui/google-login";
+import MapView from "@/features/home/ui/map-view";
 import Icon from "@/shared/ui/icon";
 import { Input } from "@/shared/ui/input";
 
@@ -17,11 +19,17 @@ const HomePage = () => {
         />
       </header>
 
-      <OptionFilter />
+      <div className="flex items-center gap-3 w-full justify-between my-3">
+        <OptionFilter />
+        <MapView />
+      </div>
 
       <Banner />
 
-      <main></main>
+      <main>
+        <GoogleLoginButton />
+        {/* <button onClick={() => login()}>Sign in with Google 🚀 </button> */}
+      </main>
     </div>
   );
 };
